@@ -1,0 +1,38 @@
+$colorX: #209ecc;
+$colorY: #52ae32;
+
+.header {
+    background: linear-gradient(0.25turn, lighten($colorX, 0), lighten($colorY, 0));
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.list {
+    color: black;
+    margin-left: 0;
+}
+.listItem {
+    background-color: lighten(grey, 40);
+    margin: 0;
+    //margin-left: 10px;
+    padding: 5px;
+    padding-left: 35px;
+    list-style: none;
+    text-transform: capitalize;
+    li {
+        list-style: disc;
+    }
+}
+.container {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    //border: 1px solid red;
+    
+    //display: flex;
+    //height: 72px;
+    // flex-direction: column;
+    // align-items: center;
+    // align-content: center;
+    // justify-content: center;
+}

@@ -6,5 +6,19 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Segoe UI"],
+          urls: ["/fonts/fonts.css"],
+        },
+        google: {
+          families: ["Droid Sans", "Droid Serif"],
+        },
+      },
+    },
+  ],
 }

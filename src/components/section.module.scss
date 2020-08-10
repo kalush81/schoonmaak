@@ -1,0 +1,68 @@
+$bgColor: #fff;
+.section {
+  display: flex;
+  justify-content: space-between;
+  min-height: 500px;
+  .card {
+    &:nth-child(1) {
+      background-image: url("../../static/images/Schoonmaakloont_Kantoor_Magazijn_Schoonmaak.jpg");
+    }
+    &:nth-child(2) {
+      background-image: url("../../static/images/Schoonmaakloont_Particulier_Huis_Schoonmaak.jpg");
+    }
+    &:nth-child(3) {
+      background-image: url("../../static/images/Schoonmaakloont_Ramenwassen_Winkelsites_Schoonmaak.jpg");
+    }
+    min-height: 400px;
+    background-size: cover;
+    width: 32%;
+    max-width: 450px;
+    border-radius: 2px;
+    .description {
+      display: inline-block;
+      background: rgba(255, 250, 250, 0.6);
+      padding: 1rem;
+      transform: translateY(20px);
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 1080px) and (min-width: 666px) {
+  .section {
+    flex-direction: column;
+    //justify-items: center;
+    
+    
+    .card {
+      width: 60%;
+      height: 270px;
+      //border: 2px solid salmon;
+      margin: 2rem 0;
+
+      background-position-y: -80px;
+      
+      .description {
+          position: relative;
+          width: 70%;
+          //border: 2px solid saddlebrown;
+          left: 110%;
+          top: 50%;
+          font-size: 1.35rem;
+          font-weight: 200;
+          font-style: italic;
+          transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media (max-width: 667px) {
+    .section {
+        flex-direction: column;
+        .card {
+            width: 100%;
+            margin: 2rem 0;
+        }
+    }
+}

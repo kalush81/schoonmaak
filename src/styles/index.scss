@@ -1,0 +1,69 @@
+
+@import "./reset.scss";
+$colorX: #209ecc;
+$colorY: #52ae32;
+//     font-family:"Segoet";
+//     src:url("/static/fonts/segoeui.ttf") format("ttf");
+// }
+// @font-face {
+//     font-family: 'Droid Sans';
+//     src:url()
+// }
+
+h1 {
+  font-weight: bold;
+}
+* {
+  box-sizing: border-box;
+  //font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+  font-family: "Segoe UI", "Droid Sans";
+  
+}
+html {
+  font-size: 95%;
+}
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  //padding-top: 20px;
+}
+
+// .full-width-wrap {
+//     // border: 2px solid red;
+//     // margin: 1rem 0;
+//     // padding: 1rem 0;
+//     height: auto;
+// }
+.nav {
+  border-bottom: 1px solid grey;
+}
+.text {
+  background-color: lighten(lightgrey, 10);
+  padding: 2rem 0;
+  line-height: 2rem;
+  font-size: larger;
+}
+main {
+  img {
+    display: grid;
+    margin: auto;
+  }
+}
+.section-container {
+  margin: 50px auto;
+}
+
+.form-full-width {
+  background: linear-gradient(0.25turn, lighten($colorX, 0), lighten($colorY, 0));
+  color: white;
+  padding: 30px 0;
+  font-size: 80%;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0;
+    margin-bottom: 25px;
+}
+

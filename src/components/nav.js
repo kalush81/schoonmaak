@@ -1,0 +1,38 @@
+import React from "react"
+import { Link } from "gatsby"
+import navStyle from "./nav.module.scss"
+import Logo from "../../static/Asset3.svg"
+
+export default function Nav() {
+  return (
+    <nav className="full-width-wrap nav">
+      <div className="container">
+        <div className={navStyle.navContainer}>
+          <div className={navStyle.logo}><img src={Logo}/></div>
+          <div className={navStyle.menu}>
+            <ul className={navStyle.navList}>
+              <li>
+                <Link to="/" activeClassName={navStyle.active}>home</Link>
+              </li>
+              <li>
+                <Link to="/particulier" activeClassName={navStyle.active}>particulier</Link>
+              </li>
+              <li>
+                <Link to="/zakelijk" activeClassName={navStyle.active}>zakelijke</Link>
+              </li>
+              <li>
+                <Link to="/ramenwassen" activeClassName={navStyle.active}>ramenwassen</Link>
+              </li>
+              <li>
+                <Link to="/desinfecteren" activeClassName={navStyle.active}>desinfecteren</Link>
+              </li>
+              <li>
+                <Link to="/offerte" activeClassName={navStyle.active}>offerte</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  )
+}
