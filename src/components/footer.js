@@ -19,7 +19,7 @@ export default function Footer() {
     <footer className="full-width-wrap">
       <div className="container">
         <div className={footerStyle.container}>
-          <div className={navStyle.logo}>
+          <div className={footerStyle.logo}>
             <Icon />
           </div>
           <div>

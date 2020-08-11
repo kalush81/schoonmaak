@@ -7,7 +7,8 @@ export default function Nav() {
   return (
     <nav className="full-width-wrap nav">
       <div className="container">
-        <div className={navStyle.navContainer}>
+        <div className={`${navStyle.navContainer} ${navStyle.mobileNav}`}>
+          {/* <button >close</button> */}
           <div className={navStyle.logo}><Icon /></div>
           <div className={navStyle.menu}>
             <ul className={navStyle.navList}>

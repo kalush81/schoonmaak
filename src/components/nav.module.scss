@@ -33,6 +33,7 @@
   color: white !important;
 }
 
+
 @media (max-width: 1080px) {
     .navContainer {
         flex-direction: column;
@@ -40,9 +41,17 @@
     }
     .navList {
         flex-direction: column;
-    }
-    
+    }    
 }
+
+@media (max-width: 1079px) {
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }  
+}
+
 .logo {
   width: 220px;
   margin-top: 0px;
