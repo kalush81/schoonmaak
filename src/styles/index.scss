@@ -106,3 +106,9 @@ rect.cls-4 {
   //   min-width: 1440px;
   // }
 }
+
+@media (max-width: 499px) {
+  html {
+    font-size: 85%;
+  }
+}
