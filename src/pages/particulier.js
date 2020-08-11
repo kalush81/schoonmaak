@@ -12,7 +12,7 @@ export default function Particulier() {
         page="particulier"
         title="Ook bij U thuis maken wij met plezier schoon."
       />
-      <Article tekst="particulier" />
+      <Article tekst="particulier" textSize='uppercase'/>
       <Pakkets packets={basis} packetsName='basis'/>
       <Pakkets packets={premium} packetsName='premium'/>
       <Article tekst="particulier2"/>

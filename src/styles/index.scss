@@ -1,4 +1,3 @@
-
 @import "./reset.scss";
 $colorX: #209ecc;
 $colorY: #52ae32;
@@ -17,14 +16,13 @@ h1 {
   box-sizing: border-box;
   //font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
   font-family: "Segoe UI", "Droid Sans";
-  
 }
 html {
   font-size: 95%;
 }
 .container {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   //padding-top: 20px;
 }
@@ -36,11 +34,15 @@ html {
 //     height: auto;
 // }
 .nav {
-  border-bottom: 1px solid grey;
+  //border-bottom: 1px solid grey;
+  margin-bottom: 3px;
+  -webkit-box-shadow: 2px 6px 20px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 6px 20px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 6px 20px -4px rgba(0, 0, 0, 0.45);
 }
 .text {
   background-color: lighten(lightgrey, 10);
-  padding: 2rem 0;
+  padding: 1.6rem 0;
   line-height: 2rem;
   font-size: larger;
 }
@@ -52,18 +54,55 @@ main {
 }
 .section-container {
   margin: 50px auto;
+  h2 {
+    font-size: 250%;
+  }
 }
 
 .form-full-width {
-  background: linear-gradient(0.25turn, lighten($colorX, 0), lighten($colorY, 0));
+  background: linear-gradient(
+    0.25turn,
+    lighten($colorX, 0),
+    lighten($colorY, 0)
+  );
   color: white;
   padding: 30px 0;
   font-size: 80%;
 }
 .form-container {
-    display: flex;
-    flex-direction: column;
-    padding: 80px 0;
-    margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+  margin-bottom: 25px;
+}
+rect.cls-4 {
+  //fill: linear-gradient(0.25turn, lighten($colorX, 0), lighten($colorY, 0));
+  animation-name: animBG;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animBG {
+  from {
+    fill: url(#linear-gradient);
+  }
+  to {
+    fill: url(#linear-gradient-2);
+  }
+}
+.footer-full-width {
+  margin-bottom: 3px;
+  -webkit-box-shadow: 2px 6px 20px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 6px 20px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 6px 20px -4px rgba(0, 0, 0, 0.45);
 }
 
+@media (min-width: 1441px) {
+  html {
+    font-size: 130%;
+  }
+  // .container {
+  //   min-width: 1440px;
+  // }
+}

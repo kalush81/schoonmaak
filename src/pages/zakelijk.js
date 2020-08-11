@@ -9,9 +9,9 @@ export default function Zakelijk() {
     return (
         <Layout>
             <Header page='zakelijk' title='Ook op kantoor leveren wij hoge kwaliteit.'/>
-            <Article tekst='zakelijk'/>
-            <Article tekst="Waarom wij?"/>
-            <Article tekst="Hoe maken we schoon?"/>
+            <Article tekst='zakelijk' textSize='uppercase'/>
+            <Article tekst="Waarom wij?" textSize='lowercase'/>
+            <Article tekst="Hoe maken we schoon?" textSize='lowercase'/>
             <Article tekst=" "/>
             <Pakkets packets={basis_zakelijk} packetsName='basis'/>
             <Pakkets packets={premium_zakelijk} packetsName='premium'/>

@@ -8,7 +8,7 @@ export default function Home() {
   return (
       <Layout>
         <Header page='home' title='Wij dragen bij aan het Milieu.'/>
-        <Article tekst='wat u zoekt'/>
+        <Article tekst='wat u zoekt' textSize='uppercase'/>
         <Section />
       </Layout>
   )

@@ -1,14 +1,14 @@
 import React from "react"
 import { Link } from "gatsby"
 import navStyle from "./nav.module.scss"
-import Logo from "../../static/Asset3.svg"
+import Icon from "../assets/asset3.svg"
 
 export default function Nav() {
   return (
     <nav className="full-width-wrap nav">
       <div className="container">
         <div className={navStyle.navContainer}>
-          <div className={navStyle.logo}><img src={Logo}/></div>
+          <div className={navStyle.logo}><Icon /></div>
           <div className={navStyle.menu}>
             <ul className={navStyle.navList}>
               <li>

@@ -7,7 +7,8 @@ export default function Ramenwassen() {
     return (
         <Layout>
             <Header page='ramenwassen' title='Ook gespecialiseerd in ramenwassen.'/>
-            <Article tekst='raam pakket'/>
+            <Article tekst='raam pakket' textSize='uppercase'/>
+            <Article tekst=" "/>
         </Layout>
     )
 }
