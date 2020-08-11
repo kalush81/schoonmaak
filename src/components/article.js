@@ -1,5 +1,5 @@
 import React from "react"
-import { text } from "../../static/text"
+import { text } from "../texts/text"
 
 export default function Article({children, tekst, textSize}) {
   

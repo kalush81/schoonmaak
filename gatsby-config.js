@@ -12,8 +12,8 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["Segoe UI"],
-          urls: ["/fonts/fonts.css"],
+          families: ["SegoeUI"],
+          urls: ["/fonts/fonts.scss"],
         },
         google: {
           families: ["Droid Sans", "Droid Serif"],
