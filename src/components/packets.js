@@ -55,7 +55,7 @@ export const premium_zakelijk = [
   '- Zorg voor het buitengebied van de onderneming:',
   [
     'Het legen van vuilnisbakken,',
-    'Schoonmaken \"smoking area\"',
+    'Schoonmaken "smoking area"',
     'Schoonmaken van de parkeerplaats van afval, onkruid',
     'Gras maaien', 
     'Zorgen voor flor  a (groen)'

@@ -40,7 +40,7 @@ export default function Footer() {
             <ul>
               {links.map(link => {
                 return (
-                  <li>
+                  <li key={link}>
                     <Link to={`/${link === "home" ? "" : link}`}>{link}</Link>
                   </li>
                 )
@@ -50,10 +50,10 @@ export default function Footer() {
           <div>
             <ul>
               <li>
-                <Link>linkedin</Link>
+                <Link to='/'>linkedin</Link>
               </li>
               <li>
-                <Link>facebook</Link>
+                <Link to='/'>facebook</Link>
               </li>
             </ul>
           </div>

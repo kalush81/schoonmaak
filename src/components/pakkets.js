@@ -6,7 +6,7 @@ export default function Pakkets({ packets, packetsName }) {
   const subItem = (packets) => {
     return <ul>
       {packets.map(packet => {
-        return <li>{packet}</li>
+        return <li key={packet}>{packet}</li>
       })}
     </ul>
   }
