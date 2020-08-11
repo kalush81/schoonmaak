@@ -2,7 +2,7 @@ import React from "react"
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Article from '../components/article'
-import Section from '../components/Section'
+import Section from '../components/section'
 
 export default function Home() {
   return (
