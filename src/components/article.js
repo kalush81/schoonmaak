@@ -4,7 +4,7 @@ import { text } from "../texts/text"
 export default function Article({children, tekst, textSize, extras=null}) {
 
   if (extras) {
-    const articles = extras.disclaimer
+    const articles = extras
     return (
       <article className="text">
         <div className="container">

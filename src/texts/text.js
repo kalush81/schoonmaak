@@ -38,7 +38,32 @@ export const disclaimer = {
     },
     {
       title: "Informatie op website en berichtgeving",
-      paragraphs: ["Indien informatie die op de website is opgenomen ook schriftelijk wordt verstrekt, zal in geval van tekstverschillen de schriftelijke versie bepalend zijn. Schoonmaak Loont v.o.f. garandeert niet dat aan haar toegezonden e-mails of andere elektronische berichten tijdig worden ontvangen en verwerkt en aanvaardt geen aansprakelijkheid voor ge- volgen van het niet of te laat ontvangen of verwerken daarvan."]
-    }
+      paragraphs: [
+        "Indien informatie die op de website is opgenomen ook schriftelijk wordt verstrekt, zal in geval van tekstverschillen de schriftelijke versie bepalend zijn. Schoonmaak Loont v.o.f. garandeert niet dat aan haar toegezonden e-mails of andere elektronische berichten tijdig worden ontvangen en verwerkt en aanvaardt geen aansprakelijkheid voor ge- volgen van het niet of te laat ontvangen of verwerken daarvan.",
+      ],
+    },
+  ],
+}
+
+export const privacybeleid = {
+  privacybeleid: [
+    {
+      title: "PRIVACYBELEID",
+      paragraphs: [
+        "Alle gegevens die door Schoonmaak Loont worden verzameld, zullen vertrouwelijk bewaard worden en zullen niet kenbaar worden gemaakt aan derden. De informatie die u aan Schoonmaak Loont geeft, zal met de grootst moge- lijke zorg behandeld worden.",
+        "Het doel van het registreren van persoonsgegevens door Schoonmaak Loont is het in kaart brengen van de activi- teiten en onderwerpen welke spelen tussen gebruikers en eindgebruikers alsmede van het eventueel kunnen leve- ren van redactionele en commerciële informatie aan onze bezoekers.",
+        "De site bevat links naar andere sites en sites van business partners. Wij zijn niet aansprakelijk voor de privacy prak- tijken noch de inhoud van deze sites die gelinkt zijn.",
+        "Schoonmaak Loont zal naar aanleiding van een verzoek elke geregistreerde bezoeker (en zijn of haar persoonlijke gegevens) uit de database verwijderen. Indien u nog vragen heeft over deze privacy verklaring, de site van Schoon- maak Loont of uw ervaringen met de site, dan kunt u contact met opnemen met Schoonmaak Loont via sa- les@schoonmaakloont.nl",
+      ],
+    },
+    {
+      title: "COOKIES",
+      paragraphs: [
+        "De website van Schoonmaak Loont plaatst cookies. Cookies zijn kleine tekstbestanden die door een internetpagina op een pc, tablet of mobiele telefoon worden geplaatst. Deze cookies worden gebruikt om de website van Schoon- maak Loont beter te laten functioneren en het web bezoek te monitoren, zodat Schoonmaak Loont na kan gaan hoeveel mensen de website in een bepaalde periode hebben bezocht. CleanChoice gebruikt deze data alleen geag- gregeerd en kan deze niet herleiden tot een pc of individu.",
+        "Google Analytics is een webanalyse-service die wordt aangeboden door Google Inc. Via deze cookies krijgt Schoonmaak Loont inzage in haar websitebezoek. Denk aan bezoekersaantallen, populaire pagina’s en onderwer- pen. Op deze manier kan Schoonmaak Loont de communicatie beter afstemmen op de behoeften van de website- bezoekers. Schoonmaak Loont kan niet zien wie (welke pc) haar website bezoekt. Google kan dit als aanbieder van de dienst wvel.",
+        "Social Media. Indien u ingelogd bent bij Facebook, kan Facebook via Schoonmaak Loont cookies op uw pc plaatsen die nodig zijn voor het liken van berichten en het updaten van uw status.",
+        "Schoonmaak Loont v.o.f."
+      ],
+    },
   ],
 }
