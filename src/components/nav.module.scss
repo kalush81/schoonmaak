@@ -24,7 +24,9 @@
     }
   }
 }
-
+.iconSvg {
+  width: 300%;
+}
 .active {
   background-color: darken(#209ecc, 0);
   padding: 6px;
@@ -65,10 +67,6 @@
 //   }
 // }
 
-.logo {
-  width: 50px;
-  height: auto;
-}
 .containerNavLinks {
   width: 400px;
   height: 120px;
@@ -86,5 +84,18 @@
     color: #52ae32;
     margin: 0 10px;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 993) {
+  .bootstrapNavbar {
+    height: 70px !important;
+  }
+  .iconSvg {
+    display: block;
+    width: 200%;
+    & > svg {
+      width: 100%;
+    }
   }
 }

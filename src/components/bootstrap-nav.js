@@ -1,10 +1,21 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Container, Navbar, Nav } from "react-bootstrap"
 import { Link } from "gatsby"
 import Icon from "../assets/asset3.svg"
 import navStyle from "./nav.module.scss"
 
 export default function BootstrapNav() {
+
+ const [myWidth, setWidth] = useState('100px')
+
+ useEffect(() => {
+   window.addEventListener('resize', () => {
+
+     window.innerWidth < 993 ? setWidth('100px') : setWidth('200px')
+   })
+ }, [])
+
+ console.log('myWidth: ', myWidth)
   return (
     <Container style={{ padding: 0 }}>
       <Navbar
@@ -13,11 +24,11 @@ export default function BootstrapNav() {
         //bg="light"
         style={{ padding: 0 }}
         className={navStyle.bootstrapNavbar}
-        justify-con
+        //justify-con
       >
         <Navbar.Brand href="/" style={{ maxHeight: 130 }}>
           <div className={navStyle.logo}>
-            <Icon style={{ width: "300%" }} />
+            <Icon style={{ width: myWidth}}/>
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive" />
@@ -37,7 +48,7 @@ export default function BootstrapNav() {
               </Nav.Item>
               </Nav>
           </div>
-          <div className="ml-auto ">
+          <div className="ml-auto " style={{fontWeight: 'bold'}}>
             <Nav as="ul">
               <Nav.Item as="li">
                 <Link to="/particulier" activeClassName={navStyle.active}>
