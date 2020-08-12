@@ -6,16 +6,14 @@ import navStyle from "./nav.module.scss"
 
 export default function BootstrapNav() {
 
- const [myWidth, setWidth] = useState('100px')
+ const [myWidth, setWidth] = useState(window.innerWidth > 993 ? '200px' : '100px')
 
  useEffect(() => {
    window.addEventListener('resize', () => {
-
      window.innerWidth < 993 ? setWidth('100px') : setWidth('200px')
    })
  }, [])
 
- console.log('myWidth: ', myWidth)
   return (
     <Container style={{ padding: 0 }}>
       <Navbar
