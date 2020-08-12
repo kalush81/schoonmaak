@@ -1,7 +1,29 @@
 import React from "react"
 import { text } from "../texts/text"
 
-export default function Article({children, tekst, textSize}) {
+export default function Article({children, tekst, textSize, extras=null}) {
+
+  if (extras) {
+    const articles = extras.disclaimer
+    return (
+      <article className="text">
+        <div className="container">
+        {articles.map(article => {
+          return (
+            <ul>
+              <h3>{article.title}</h3>
+              {article.paragraphs.map(paragraph => {
+                return (
+                  <li>{paragraph}</li>
+                )
+              })}
+            </ul>
+          ) 
+        })}
+        </div>
+      </article>
+    )
+  }
   
   return (
     <article className="text">

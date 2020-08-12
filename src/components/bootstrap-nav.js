@@ -5,37 +5,35 @@ import Icon from "../assets/asset3.svg"
 import navStyle from "./nav.module.scss"
 
 export default function BootstrapNav() {
+  const [myWidth, setWidth] = useState("1px")
 
- 
-const [myWidth, setWidth] = useState('1px')
-
- useEffect(() => {
-   setWidth(window.innerWidth < 993 ? '80px' : '200px')
-   window.addEventListener('resize', () => {
-     window.innerWidth < 993 ? setWidth('80px') : setWidth('200px')
-   })
- }, [])
+  useEffect(() => {
+    setWidth(window.innerWidth < 993 ? "80px" : "280px")
+    window.addEventListener("resize", () => {
+      window.innerWidth < 993 ? setWidth("80px") : setWidth("280px")
+    })
+  }, [])
 
   return (
     <Container style={{ padding: 0 }}>
       <Navbar
-        className='justify-content-between'
+        className="justify-content-between"
         expand="lg"
         //bg="light"
         style={{ padding: 0 }}
         className={navStyle.bootstrapNavbar}
         //justify-con
       >
-        <Navbar.Brand href="/" style={{ maxHeight: 130 }}>
+        <Navbar.Brand href="/">
           <div className={navStyle.logo}>
-            <Icon style={{ width: myWidth}}/>
+            <Icon style={{ width: myWidth }} />
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive" />
 
         <Navbar.Collapse id="navbarResponsive" className="nav-column">
           <div className="ml-auto upperNav">
-              <Nav as='ul'>
+            <Nav as="ul">
               <Nav.Item as="li">
                 <Link to="/overons" activeClassName={navStyle.active}>
                   over ons
@@ -46,10 +44,18 @@ const [myWidth, setWidth] = useState('1px')
                   contact
                 </Link>
               </Nav.Item>
-              </Nav>
+            </Nav>
           </div>
-          <div className="ml-auto " style={{fontWeight: 'bold'}}>
+          <div
+            className="ml-auto "
+            style={{ fontWeight: "bold", marginTop: 50, fontSize: "0.9rem" }}
+          >
             <Nav as="ul">
+              <Nav.Item as="li">
+                <Link to="/" activeClassName={navStyle.active}>
+                  home
+                </Link>
+              </Nav.Item>
               <Nav.Item as="li">
                 <Link to="/particulier" activeClassName={navStyle.active}>
                   particulier
