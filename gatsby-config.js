@@ -7,7 +7,6 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-    //`gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-web-font-loader",
@@ -28,6 +27,7 @@ module.exports = {
           include: /assets/ // See below to configure properly
         }
       }
-    }
+    },
+    `gatsby-plugin-remove-trailing-slashes`,
   ],
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import navStyle from "./nav.module.scss"
 import Icon from "../assets/asset3.svg"
