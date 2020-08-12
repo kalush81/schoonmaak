@@ -10,9 +10,9 @@ export default function BootstrapNav() {
 const [myWidth, setWidth] = useState('1px')
 
  useEffect(() => {
-   setWidth(window.innerWidth < 993 ? '100px' : '200px')
+   setWidth(window.innerWidth < 993 ? '80px' : '200px')
    window.addEventListener('resize', () => {
-     window.innerWidth < 993 ? setWidth('100px') : setWidth('200px')
+     window.innerWidth < 993 ? setWidth('80px') : setWidth('200px')
    })
  }, [])
 
