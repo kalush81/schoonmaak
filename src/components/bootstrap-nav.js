@@ -7,7 +7,7 @@ import navStyle from "./nav.module.scss"
 export default function BootstrapNav() {
 
  
-const [myWidth, setWidth] = useState('200px')
+const [myWidth, setWidth] = useState('1px')
 
  useEffect(() => {
    setWidth(window.innerWidth < 993 ? '100px' : '200px')
