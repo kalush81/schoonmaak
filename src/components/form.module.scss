@@ -58,4 +58,8 @@ input {
         height: 200px;
     }
 }
-
+@media (max-width: 340px) {
+  .container {
+    // height: 400px;
+  }
+}

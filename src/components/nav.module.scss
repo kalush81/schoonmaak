@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 .navList {
   display: flex;
@@ -27,32 +26,65 @@
 }
 
 .active {
-  background-color: darken(turquoise, 20);
-  padding: 12px;
-  border-radius: 20px;
+  background-color: darken(#209ecc, 0);
+  padding: 6px;
+  border-radius: 10px;
   color: white !important;
 }
 
-
 @media (max-width: 1080px) {
-    .navContainer {
-        flex-direction: column;
-        display: none;
-    }
-    .navList {
-        flex-direction: column;
-    }    
+  .test {
+    display: none;
+  }
+  .navContainer {
+    flex-direction: column;
+  }
+  .navList {
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 1079px) {
-  .mobileNav {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  }  
+// @media(min-width: 1081px) {
+//   .navContainer {
+//     display: flex;
+//   }
+// }
+.open {
+  display: flex;
 }
+.close {
+  display: none;
+}
+
+// @media (max-width: 1079px) {
+//   .mobileNav {
+//     display: flex;
+//     flex-direction: column;
+//     align-content: space-between;
+//     //display: none;
+//   }
+// }
 
 .logo {
-  width: 220px;
-  margin-top: 0px;
+  width: 50px;
+  height: auto;
+}
+.containerNavLinks {
+  width: 400px;
+  height: 120px;
+  border: 1px solid darkgreen;
+}
+
+@media (max-width: 340px) {
+  .active {
+    padding: 0.5rem;
+  }
+}
+
+.bootstrapNavbar {
+  a {
+    color: #52ae32;
+    margin: 0 10px;
+    text-transform: uppercase;
+  }
 }

@@ -1,4 +1,6 @@
 @import "./reset.scss";
+@import "~bootstrap/scss/bootstrap";
+
 $colorX: #209ecc;
 $colorY: #52ae32;
 //     font-family:"Segoet";
@@ -22,8 +24,10 @@ html {
 }
 .container {
   width: 80%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0;
+  //border: 1px solid red;
   //padding-top: 20px;
 }
 
@@ -111,4 +115,32 @@ rect.cls-4 {
   html {
     font-size: 85%;
   }
+}
+@media (max-width: 340px) {
+  html {
+    font-size: 75%;
+    
+  }
+}
+
+@media (min-width : 1080px) {
+  .mobile-button {
+    display: none;
+  }
+}
+.nav-column {
+  flex-direction: column;
+}
+.ml-auto  {
+  padding: 15px 0 0 0;
+  //border: 1px solid red;
+}
+
+.upperNav {
+  // width: 200px;
+  // height: 30px;
+  //border: 1px solid darkgreen;
+}
+.upperNav a {
+  text-transform: lowercase;
 }
