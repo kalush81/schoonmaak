@@ -46,7 +46,7 @@ export default function BootstrapNav() {
               </Nav.Item>
               <Nav.Item as="li">
                 <Link to="/zakelijk" activeClassName={navStyle.active}>
-                  particulier
+                  zakelijk
                 </Link>
               </Nav.Item>
               <Nav.Item as="li">

@@ -1,5 +1,5 @@
-@import "./reset.scss";
 @import "~bootstrap/scss/bootstrap";
+@import "./reset.scss";
 
 $colorX: #209ecc;
 $colorY: #52ae32;
@@ -17,7 +17,7 @@ h1 {
 * {
   box-sizing: border-box;
   //font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
-  font-family: "SegoeUI", "Droid Sans";
+  font-family: "SegoeUI", "Droid Sans" !important;
 }
 html {
   font-size: 95%;
@@ -52,7 +52,7 @@ html {
 }
 main {
   img {
-    display: grid;
+    display: grid !important;
     margin: auto;
   }
 }
@@ -143,4 +143,9 @@ rect.cls-4 {
 }
 .upperNav a {
   text-transform: lowercase;
+}
+
+article {
+  margin: 0;
+  padding: 0;
 }
