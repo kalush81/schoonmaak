@@ -6,7 +6,7 @@ import navStyle from "./nav.module.scss"
 
 export default function BootstrapNav() {
 
- const [myWidth, setWidth] = useState(window.innerWidth > 993 ? '200px' : '100px')
+ const [myWidth, setWidth] = useState(typeof window !== undefined ? window.innerWidth > 993 ? '200px' : '100px' : '900px')
 
  useEffect(() => {
    window.addEventListener('resize', () => {
