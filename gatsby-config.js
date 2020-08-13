@@ -12,7 +12,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
-          families: ["SegoeUI"],
+          families: ["SegoeUIZ"],
           urls: ["/fonts/fonts.scss"],
         },
         google: {

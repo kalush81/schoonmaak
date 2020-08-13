@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={footerStyle.disclaimer}>
-        <span>SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN | PRIVACY BELEID | DISCLAIMER</span>
+        <span>SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN | <Link to='/privacybeleid'>PRIVACY BELEID </Link>| <Link to='/disclaimer'>DISCLAIMER</Link></span>
       </div>
     </footer>
   )
