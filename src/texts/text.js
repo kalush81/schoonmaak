@@ -190,3 +190,21 @@ export const overons = {
     }
   ] 
 }
+
+export const contact = {
+  articles: [
+    {
+      title: '',
+      paragraphs: [
+        {
+          id: 1,
+          text: 'U zoekt een schoonmaakpartner die niet alleen milieubewust is op zijn dienstverlening, maar ook op de uwe! Een partner die proactief innoveert. Bruisend van innovaties voeren we continu vernieuwingen door in onze diensten. We zijn benieuwd naar uw (schoonmaak)wensen en gaan hierover graag met u in gesprek. Vraag vrijblijvend een offerte aan en we nemen zo snel mogelijk contact met u op.'
+        },
+        {
+          id: 2,
+          text: 'Heeft u een vraag, opmerking, suggestie of klacht? We helpen u graag! Vul onde staand contactformulier in en we nemen zo snel mogelijk contact met u op.'
+        }
+      ]
+    }
+  ] 
+}
