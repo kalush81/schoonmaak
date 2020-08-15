@@ -11,7 +11,7 @@ export default function Disclaimer() {
             <header>
                 <h1 className={disclaimerStyle.figcap}>Disclaimer.</h1>
             </header>
-            <Article extras={disclaimer.disclaimer}/>
+            <Article extras={{...disclaimer}}/>
         </Layout>
     )
 }

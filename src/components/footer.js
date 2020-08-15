@@ -12,7 +12,7 @@ export default function Footer() {
     "ramenwassen",
     "desinfecteren",
     "contact",
-    "over ons",
+    "overons",
     "offerte",
   ]
   return (

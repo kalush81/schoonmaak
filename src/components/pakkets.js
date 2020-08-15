@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import packetsStyle from "./packets.module.scss"
 
-export default function Pakkets({ packets, packetsName }) {
+export default function Pakkets({ packets, packetsName, style }) {
   const [isOpen, setOpen] = useState(false)
   const subItem = (packets) => {
     return <ul>
@@ -11,10 +11,10 @@ export default function Pakkets({ packets, packetsName }) {
     </ul>
   }
   return (
-    <div className="container">
+    <div className="container" style={{width: !style? '80%' : '100%'}}>
       <div className={packetsStyle.container}>
         <h3 className={packetsStyle.header} onClick={() => setOpen(!isOpen)}>
-          {isOpen ? "-" : "+"} {packetsName + " pakket"}
+          {isOpen ? "-" : "+"} {packetsName !== 'ONZE KERNWAARDES'? packetsName + " pakket" : packetsName}
         </h3>
         {isOpen ? (
           <ul className={packetsStyle.list}>

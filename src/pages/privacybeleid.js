@@ -10,7 +10,7 @@ export default function Privacybeleid() {
             <header>
                 <h1 className={disclaimerStyle.figcap}>Wij gaan zorgvuldig met uw privacy om.</h1>
             </header>
-            <Article extras={privacybeleid.privacybeleid}/>
+            <Article extras={{...privacybeleid}}/>
         </Layout>
     )
 }
