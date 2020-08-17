@@ -8,7 +8,7 @@ import Forms from '../components/forms'
 
 export default function Contact() {
     return (
-        <Layout>
+        <Layout hasForm={null}>
             <header>
                 <h1 className={contactStyle.figcap}>Contact met Schoonmaak Loont.</h1>
             </header>

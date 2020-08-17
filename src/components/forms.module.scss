@@ -76,6 +76,7 @@ $colorY: #52ae32;
  //-------------------------------------------
 @media (max-width: 991px) {
     .container {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         .formParticulier, .formZakelijk {

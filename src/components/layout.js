@@ -19,7 +19,7 @@ export default function Layout(props) {
       {/* <Nav isOn={param}/>
       <MenuToggleButton setVisibility={setParam} isOn={param} /> */}
       <MyMain>{props.children}</MyMain>
-      <Form />
+      {props.hasForm !== null && <Form />}
       <Footer></Footer>
     </>
   )
