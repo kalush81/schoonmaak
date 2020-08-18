@@ -1,0 +1,127 @@
+$colorX: #209ecc;
+$colorY: #52ae32;
+
+.fancy-form-container {
+  display: flex;
+  //height: 500px;
+  //border: 3px solid red;
+  padding: 30px;
+  background: linear-gradient(
+    0.25turn,
+    lighten($colorX, 0),
+    lighten($colorY, 0)
+  );
+  input {
+    border: 2px solid lighten(black , 80%);
+    border-radius: 3px;
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+  }
+  h2 {
+      color: rgba(0,0,0,0.7);
+      font-weight: 500;
+  }
+}
+
+.logoPanel {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //border: 1px solid green;
+}
+
+.logo {
+    width: 200px;
+}
+
+.descr {
+    h2 {
+        text-align: center;
+    }
+}
+
+.formWraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+  width: 70%;
+  //height: 530px;
+  //border: 2px solid black;
+  background-color: whitesmoke;
+  border-radius: 10% / 50%;
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+}
+
+.switch {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnWrap {
+    //width: 200px;
+    background: $colorX;
+    border-radius: 20px;
+    text-align: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    button {
+        border: none;
+        background: transparent;
+        color: white;
+        &.active {
+            color: $colorX;
+            background: white;
+            border: 2px solid $colorX;
+            border-radius: 20px;
+        }
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.formLeftPart,
+.formRightPart {
+  margin: 15px;
+  width: 35%;
+}
+
+.gender {
+  //border: 1px solid black;
+  font-size: small;
+  input {
+    width: auto;
+    display: inline;
+  }
+}
+.buttonDiv {
+  //border: 1px solid purple;
+  text-align: right;
+  // display: flex ;
+  // justify-content: end;
+  button {
+    padding: 5px 35px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(
+      0.25turn,
+      lighten($colorX, 0),
+      lighten($colorY, 0)
+    );
+    color: white;
+  }
+}
+

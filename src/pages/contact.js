@@ -14,6 +14,9 @@ export default function Contact() {
             </header>
             <Article extras={contact}/>
             <Forms />
+            <div className='full-width-container bar'>
+
+            </div>
         </Layout>
     )
 }

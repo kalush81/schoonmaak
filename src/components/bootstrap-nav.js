@@ -18,7 +18,7 @@ export default function BootstrapNav() {
     <Container style={{ padding: 0 }}>
       <Navbar
         className="justify-content-between"
-        expand="lg"
+        expand="xl"
         //bg="light"
         style={{ padding: 0 }}
         className={navStyle.bootstrapNavbar}
@@ -34,6 +34,11 @@ export default function BootstrapNav() {
         <Navbar.Collapse id="navbarResponsive" className="nav-column">
           <div className="ml-auto upperNav">
             <Nav as="ul">
+            <Nav.Item as="li">
+                <Link to="/fancy-form" activeClassName={navStyle.active}>
+                  fancy form
+                </Link>
+              </Nav.Item>
               <Nav.Item as="li">
                 <Link to="/overons" activeClassName={navStyle.active}>
                   over ons
