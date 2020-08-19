@@ -8,19 +8,18 @@ import fancyFormStyle from "./fancy-form-style.module.scss"
 export default function MyFancyForm() {
   const [activeForm, toggleActiveForm] = useState(true)
   let myspan = {
-      active: {
-        color: '#209ecc',  
-        background: 'white',
-        border: '2px solid #209ecc',
-        borderRadius: '17px',
-        marginLeft: '2px',
-        marginRight: '2px',
-        //padding: '5px 10px'
-      },
-      noactive: {
-          color: 'white'
-      }
-
+    active: {
+      color: "#209ecc",
+      background: "white",
+      border: "2px solid #209ecc",
+      borderRadius: "17px",
+      marginLeft: "2px",
+      marginRight: "2px",
+      //padding: '5px 10px'
+    },
+    noactive: {
+      color: "white",
+    },
   }
   return (
     <div className="container">
@@ -38,13 +37,19 @@ export default function MyFancyForm() {
           <div className={fancyFormStyle.switch}>
             <div className={fancyFormStyle.btnWrap}>
               <button onClick={() => toggleActiveForm(!activeForm)}>
-                <span style={activeForm? myspan.active : myspan.noactive}>Particulier</span>
-                <span style={activeForm? myspan.noactive : myspan.active}>Zakelijk</span>
+                <span style={activeForm ? myspan.active : myspan.noactive}>
+                  Particulier
+                </span>
+                <span style={activeForm ? myspan.noactive : myspan.active}>
+                  Zakelijk
+                </span>
               </button>
             </div>
           </div>
 
-  <h2 style={{ textAlign: "center" }}>Solliciteren als {activeForm ? "Particulier" : 'Zakelijk'}</h2>
+          <h2 style={{ textAlign: "center" }}>
+            Solliciteren als {activeForm ? "Particulier" : "Zakelijk"}
+          </h2>
 
           {/* form particulier or form zakelijk*/}
 
