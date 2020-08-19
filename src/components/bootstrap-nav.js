@@ -41,19 +41,19 @@ export default function BootstrapNav() {
               </Nav.Item>
               <Nav.Item as="li">
                 <Link to="/overons" activeClassName={navStyle.active}>
-                  over ons
+                  Over ons
                 </Link>
               </Nav.Item>
               <Nav.Item as="li">
                 <Link to="/contact" activeClassName={navStyle.active}>
-                  contact
+                  Contact
                 </Link>
               </Nav.Item>
             </Nav>
           </div>
           <div
             className="ml-auto "
-            style={{ fontWeight: "bold", marginTop: 50, fontSize: "0.9rem" }}
+            style={{ fontWeight: "bold", marginTop: '20px', fontSize: "0.9rem" }}
           >
             <Nav as="ul">
               <Nav.Item as="li">
