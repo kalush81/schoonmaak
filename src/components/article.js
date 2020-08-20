@@ -35,7 +35,7 @@ export default function Article({ children, tekst, textSize, extras = null }) {
   return (
     <article className="text">
       <div className="container">
-        <h3 style={{ textTransform: textSize }}>
+        <h3 style={{ textTransform: textSize, display: `${tekst==='particulier2' || tekst===' ' ? 'none': 'block'}` }}>
           {tekst === "particulier2" ? "" : tekst}
         </h3>
         <p style={{ marginBottom: "0" }}>{text[tekst]}</p>

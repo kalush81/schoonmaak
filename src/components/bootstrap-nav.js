@@ -45,7 +45,7 @@ export default function BootstrapNav() {
                 </Link>
               </Nav.Item>
               <Nav.Item as="li">
-                <Link to="/contact" activeClassName={navStyle.active}>
+                <Link  id='contactBtnId' to="/contact" className={navStyle.contactBtn} activeClassName={navStyle.active}>
                   Contact
                 </Link>
               </Nav.Item>

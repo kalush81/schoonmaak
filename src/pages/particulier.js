@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Article from "../components/article"
 import Pakkets from "../components/pakkets"
-import { basis, premium, renovatie } from '../components/packets'
+import { basis, premium, renovatie } from "../components/packets"
 
 export default function Particulier() {
   return (
@@ -12,11 +12,15 @@ export default function Particulier() {
         page="particulier"
         title="Ook bij U thuis maken wij met plezier schoon."
       />
-      <Article tekst="particulier" textSize='uppercase'/>
-      <Pakkets packets={basis} packetsName='basis'/>
-      <Pakkets packets={premium} packetsName='premium'/>
-      <Article tekst="particulier2"/>
-      <Pakkets packets={renovatie} packetsName='renovatie'/>
+      <div className="article-text-container">
+        <Article tekst="particulier" textSize="uppercase" />
+      </div>
+      <Pakkets packets={basis} packetsName="basis" />
+      <Pakkets packets={premium} packetsName="premium" />
+      <div className="article-text-container">
+        <Article tekst="particulier2" />
+      </div>
+      <Pakkets packets={renovatie} packetsName="renovatie" />
     </Layout>
   )
 }

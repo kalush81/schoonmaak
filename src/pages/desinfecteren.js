@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Article from "../components/article"
+import desinfStyles from '../components/desinf.module.scss'
 
 export default function Desinfecteren() {
   return (
@@ -11,6 +12,7 @@ export default function Desinfecteren() {
         title="Virusvrij thuis en op kantoor met Ozon."
       />
       <Article>
+        <div className={desinfStyles.list}>
         <p>
           Ozon binnenshuis en op kantoor is een effectieve en bewezen methode
           voor het verwijderen van ziektekiemen, bacteriën en allergenen en
@@ -84,6 +86,7 @@ export default function Desinfecteren() {
           kantoorruimte, neem dan contact met ons op via 0629262799 of e-mail:
         </p>
         <a href='mailto:hallo@schoonmaakloon.nl'>hallo@schoonmaakloon.nl</a>
+        </div>
       </Article>
     </Layout>
   )

@@ -1,8 +1,12 @@
+$colorX: #209ecc;
+$colorY: #52ae32;
+
 .navContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .navList {
   display: flex;
   list-style: none;
@@ -24,9 +28,21 @@
     }
   }
 }
+
+.contactBtn {
+  //border: 2px solid green;
+  padding: 6px;
+  background: linear-gradient(0.25turn, lighten($colorX, 0), lighten($colorY, 0));
+  border-radius: 10px;
+  &:first-child {
+    color: white;
+  }
+}
+
 .iconSvg {
   width: 300%;
 }
+
 .active {
   background-color: darken(#209ecc, 0);
   padding: 6px;
@@ -46,26 +62,13 @@
   }
 }
 
-// @media(min-width: 1081px) {
-//   .navContainer {
-//     display: flex;
-//   }
-// }
 .open {
   display: flex;
 }
+
 .close {
   display: none;
 }
-
-// @media (max-width: 1079px) {
-//   .mobileNav {
-//     display: flex;
-//     flex-direction: column;
-//     align-content: space-between;
-//     //display: none;
-//   }
-// }
 
 .containerNavLinks {
   width: 400px;

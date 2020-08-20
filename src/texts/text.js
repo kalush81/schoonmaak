@@ -123,88 +123,122 @@ export const privacybeleid = {
 export const overons = {
   articles: [
     {
-      title: 'WIE ZIJN WIJ?',
+      title: "WIE ZIJN WIJ?",
       paragraphs: [
         {
           id: 1,
-          text: 'Wij zijn een milieubewuste dienstverlener, denk hierbij aan maatschappelijk verantwoord ondernemen en het ge- bruik van ECO/natuurlijke schoonmaakmiddelen/producten. Zo kunnen wij bedrijven nog meer bewust maken naar de mogelijkheden om meer bij te dragen aan het milieu. Denk dan aan dat Schoonmaak Loont.'
-        }
-      ]
+          text:
+            "Wij zijn een milieubewuste dienstverlener, denk hierbij aan maatschappelijk verantwoord ondernemen en het ge- bruik van ECO/natuurlijke schoonmaakmiddelen/producten. Zo kunnen wij bedrijven nog meer bewust maken naar de mogelijkheden om meer bij te dragen aan het milieu. Denk dan aan dat Schoonmaak Loont.",
+        },
+      ],
     },
     {
-      title: 'ONS MISSIE',
+      title: "ONS MISSIE",
       paragraphs: [
         {
           id: 1,
-          text: 'Schoonmaak Loont focust op kwaliteit en zorgt ervoor dat geniet u van een schoon en representatief resultaat, zonder dat u ergens omkijken naar heeft.'
-        }
-      ]
+          text:
+            "Schoonmaak Loont focust op kwaliteit en zorgt ervoor dat geniet u van een schoon en representatief resultaat, zonder dat u ergens omkijken naar heeft.",
+        },
+      ],
     },
     {
-      title: 'ONS VISIE',
+      title: "ONS VISIE",
       paragraphs: [
         {
           id: 1,
-          text: 'Bij ons werk vormt duurzaamheid een belangrijke pijler. We hebben oog voor het milieu en gaan voor een samen- werking op de lange termijn. Door continu te kijken hoe we onze dienstverlening verder kunnen verbeteren, blijven we vernieuwend. Nu én in de toekomst.'
-        }
-      ]
+          text:
+            "Bij ons werk vormt duurzaamheid een belangrijke pijler. We hebben oog voor het milieu en gaan voor een samen- werking op de lange termijn. Door continu te kijken hoe we onze dienstverlening verder kunnen verbeteren, blijven we vernieuwend. Nu én in de toekomst.",
+        },
+      ],
     },
     {
-      title: 'ONZE KERNWAARDES',
+      title: "ONZE KERNWAARDES",
       paragraphs: [
         {
           id: 1,
-          title: 'BETROKKEN',
-          text: 'Wij trainen onze medewerkers niet alleen op schoonmaak maar ook om bij verschillende gebouwgebruikers in woorden en gedrag betrokkenheid uit te stralen. Onze betrokkenheid is een dienstverlening die als serviceverlening een ‘belevenis’ toevoegt.'
+          title: "BETROKKEN",
+          text:
+            "Wij trainen onze medewerkers niet alleen op schoonmaak maar ook om bij verschillende gebouwgebruikers in woorden en gedrag betrokkenheid uit te stralen. Onze betrokkenheid is een dienstverlening die als serviceverlening een ‘belevenis’ toevoegt.",
         },
         {
           id: 2,
-          title: 'TRANSPARANT',
-          text: 'Wij hebben een open en transparante werkwijze. Wij doen wat we met u hebben afgesproken en maken dit volledig voor u inzichtelijk.'
+          title: "TRANSPARANT",
+          text:
+            "Wij hebben een open en transparante werkwijze. Wij doen wat we met u hebben afgesproken en maken dit volledig voor u inzichtelijk.",
         },
         {
           id: 3,
-          title: 'BETROUWBAAR',
-          text: 'Uw gebouw is onze verantwoordelijkheid en wij zoeken daarom het juiste personeel dat bij u past. Onze medewerkers worden voordat zij in dienst treden volledig gescreend. Dit doen wij om onze kwaliteit, betrouwbaarheid en veiligheid van opdrachtgevers en onszelf te behouden.'
+          title: "BETROUWBAAR",
+          text:
+            "Uw gebouw is onze verantwoordelijkheid en wij zoeken daarom het juiste personeel dat bij u past. Onze medewerkers worden voordat zij in dienst treden volledig gescreend. Dit doen wij om onze kwaliteit, betrouwbaarheid en veiligheid van opdrachtgevers en onszelf te behouden.",
         },
         {
           id: 4,
-          title: 'FLEXIBILITEIT',
-          text: 'Onopgemerkt nemen wij als regiepartner u zoveel mogelijk werk uit handen. Wij zullen u optimaal ontzorgen en u helpen de gestelde doelen te bereiken. Flexibiliteit wordt hierin uitermate gehanteerd.'
+          title: "FLEXIBILITEIT",
+          text:
+            "Onopgemerkt nemen wij als regiepartner u zoveel mogelijk werk uit handen. Wij zullen u optimaal ontzorgen en u helpen de gestelde doelen te bereiken. Flexibiliteit wordt hierin uitermate gehanteerd.",
         },
         {
           id: 5,
-          title: 'CONTINUÏTEIT',
-          text: 'We handelen met het oog op de toekomst. We richten ons op langdurige relaties en zorgen voor duurzaam succes. We geven continu vorm aan transformatie.'
-        }
-      ]
+          title: "CONTINUÏTEIT",
+          text:
+            "We handelen met het oog op de toekomst. We richten ons op langdurige relaties en zorgen voor duurzaam succes. We geven continu vorm aan transformatie.",
+        },
+      ],
     },
     {
-      title: 'ONZE SECTOREN',
+      title: "ONZE SECTOREN",
       paragraphs: [
         {
           id: 1,
-          text: 'Gemeenten, Onderwijsinstellingen, Verzekeringsmaatschappijen en Banken, Technische en Industriële sector, Logis- tiek en Transport, Zorg- en Gezondheids-instellingen, Woningcorporaties, MKB, Horeca en Toerisme, Bouw- en In- stallatie-bedrijven, Automatisering, Administratie en Accounting.'
-        }
-      ]
-    }
-  ] 
+          text:
+            "Gemeenten, Onderwijsinstellingen, Verzekeringsmaatschappijen en Banken, Technische en Industriële sector, Logis- tiek en Transport, Zorg- en Gezondheids-instellingen, Woningcorporaties, MKB, Horeca en Toerisme, Bouw- en In- stallatie-bedrijven, Automatisering, Administratie en Accounting.",
+        },
+      ],
+    },
+  ],
 }
 
 export const contact = {
   articles: [
     {
-      title: '',
+      title: "",
       paragraphs: [
         {
           id: 1,
-          text: 'U zoekt een schoonmaakpartner die niet alleen milieubewust is op zijn dienstverlening, maar ook op de uwe! Een partner die proactief innoveert. Bruisend van innovaties voeren we continu vernieuwingen door in onze diensten. We zijn benieuwd naar uw (schoonmaak)wensen en gaan hierover graag met u in gesprek. Vraag vrijblijvend een offerte aan en we nemen zo snel mogelijk contact met u op.'
+          text:
+            "U zoekt een schoonmaakpartner die niet alleen milieubewust is op zijn dienstverlening, maar ook op de uwe! Een partner die proactief innoveert. Bruisend van innovaties voeren we continu vernieuwingen door in onze diensten. We zijn benieuwd naar uw (schoonmaak)wensen en gaan hierover graag met u in gesprek. Vraag vrijblijvend een offerte aan en we nemen zo snel mogelijk contact met u op.",
         },
         {
           id: 2,
-          text: 'Heeft u een vraag, opmerking, suggestie of klacht? We helpen u graag! Vul onde staand contactformulier in en we nemen zo snel mogelijk contact met u op.'
+          text:
+            "Heeft u een vraag, opmerking, suggestie of klacht? We helpen u graag! Vul onde staand contactformulier in en we nemen zo snel mogelijk contact met u op.",
+        },
+      ],
+    },
+  ],
+}
+
+export const ramenwassen = {
+  articles: [
+    {
+      title: "RAAM PAKKET",
+      paragraphs: [
+        {
+          id: 1,
+          text:
+            "Ramen zijn ons bezoek en moet er onberispelijk uitzien, en schone ramen zijn een determinant van zorg voor orde.",
+        },
+        {
+          id: 2,
+          text: 'Gewassen ramen, kozijnen en vensterbanken maken de ruimte natuurlijker licht en de werkplek maakt een betere indruk. Bovendien werkt het verlichte kantoor beter en zijn schone ramen meer gezondheidszorg. Wilt u dat de ramen in uw kantoren perfect schoon zijn? Wij zijn professionals en we hebben al duizenden ramen gerooid. We weten hoe we de werktechnieken op de bestelling kunnen afstemmen. Bij het schoonmaken van ramen houden we de kantoren stil en proberen we de schoonmaak zo soepel mogelijk te laten verlopen. Wij besteden speciale zorg in de buurt van kantoorapparatuur en documenten. U bent er zeker van zijn dat we het schoonmaakwerk van uw kantoren niemand zouden verstoren.'
+        },
+        {
+          id: 3,
+          text: 'We wassen allerlei ramen, waaronder plastic, aluminium, houten en oude raamramen (losgeschroefd). We zullen ook bereiken voor de dakramen en schoonmaken van de balkonramen, evenals alle andere beglazing in uw huis. We zullen leiden tot de gloed van een standaard bevuild venster voor kerstmis of zich te ontdoen van moeilijk te verwijderen onzuiverheden na renovatie. Wij voeren eenmalige en terugkerende bestellingen uit van individuele en zakelijke klanten.De prijs wordt altijd individueel bepaald op basis van de afmetingen van de ramen, het toegankelijkheidsgemak, het type beglazing en de mate van vervuiling.'
         }
-      ]
-    }
-  ] 
+      ],
+    },
+  ],
 }

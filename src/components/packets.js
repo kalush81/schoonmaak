@@ -63,13 +63,38 @@ export const premium_zakelijk = [
 ]
 
 export const onze_kernwaardes = [
-  'BETROKKEN',
-  ['Wij trainen onze medewerkers niet alleen op schoonmaak maar ook om bij verschillende gebouwgebruikers in woorden en gedrag betrokkenheid uit te stralen. Onze betrokkenheid is een dienstverlening die als serviceverlening een ‘belevenis’ toevoegt.'],
-  'TRANSPARANT',
-  ['Wij hebben een open en transparante werkwijze. Wij doen wat we met u hebben afgesproken en maken dit volledig voor u inzichtelijk.'],
-  'BETROUWBAAR',
-  ['Uw gebouw is onze verantwoordelijkheid en wij zoeken daarom het juiste personeel dat bij u past. Onze medewerkers worden voordat zij in dienst treden volledig gescreend. Dit doen wij om onze kwaliteit, betrouwbaarheid en veiligheid van opdrachtgevers en onszelf te behouden.'],
-  'FLEXIBILITEIT',
-  ['Onopgemerkt nemen wij als regiepartner u zoveel mogelijk werk uit handen. Wij zullen u optimaal ontzorgen en u helpen de gestelde doelen te bereiken. Flexibiliteit wordt hierin uitermate gehanteerd.']
+  {
+    id: 1,
+    title: 'BETROKKEN',
+    text: 'Wij trainen onze medewerkers niet alleen op schoonmaak maar ook om bij verschillende gebouwgebruikers in woorden en gedrag betrokkenheid uit te stralen. Onze betrokkenheid is een dienstverlening die als serviceverlening een ‘belevenis’ toevoegt.'
+  },
+  {
+    id: 2,
+    title: 'TRANSPARANT',
+    text: 'Wij hebben een open en transparante werkwijze. Wij doen wat we met u hebben afgesproken en maken dit volledig voor u inzichtelijk.'
+  },
+  {
+    id: 3,
+    title: 'BETROWBAAR',
+    text: 'Uw gebouw is onze verantwoordelijkheid en wij zoeken daarom het juiste personeel dat bij u past. Onze medewerkers worden voordat zij in dienst treden volledig gescreend. Dit doen wij om onze kwaliteit, betrouwbaarheid en veiligheid van opdrachtgevers en onszelf te behouden.'
+  },
+  {
+    id: 4,
+    title: 'FLEXIBILITEIT',
+    text: 'Onopgemerkt nemen wij als regiepartner u zoveel mogelijk werk uit handen. Wij zullen u optimaal ontzorgen en u helpen de gestelde doelen te bereiken. Flexibiliteit wordt hierin uitermate gehanteerd.'
+  },
+  {
+    id: 5,
+    title: 'CONTINUITEIT',
+    text: 'We handelen met het oog op de toekomst. We richten ons op langdurige relaties en zorgen voor duurzaam succes. We geven continu vorm aan transformatie.'
+  }
+  // 'BETROKKEN',
+  // ['Wij trainen onze medewerkers niet alleen op schoonmaak maar ook om bij verschillende gebouwgebruikers in woorden en gedrag betrokkenheid uit te stralen. Onze betrokkenheid is een dienstverlening die als serviceverlening een ‘belevenis’ toevoegt.'],
+  // 'TRANSPARANT',
+  // ['Wij hebben een open en transparante werkwijze. Wij doen wat we met u hebben afgesproken en maken dit volledig voor u inzichtelijk.'],
+  // 'BETROUWBAAR',
+  // ['Uw gebouw is onze verantwoordelijkheid en wij zoeken daarom het juiste personeel dat bij u past. Onze medewerkers worden voordat zij in dienst treden volledig gescreend. Dit doen wij om onze kwaliteit, betrouwbaarheid en veiligheid van opdrachtgevers en onszelf te behouden.'],
+  // 'FLEXIBILITEIT',
+  // ['Onopgemerkt nemen wij als regiepartner u zoveel mogelijk werk uit handen. Wij zullen u optimaal ontzorgen en u helpen de gestelde doelen te bereiken. Flexibiliteit wordt hierin uitermate gehanteerd.']
 ]
 

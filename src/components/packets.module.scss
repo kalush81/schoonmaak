@@ -12,29 +12,39 @@ $bg-light-color: #f8f9fa;
 .list {
     color: black;
     margin-left: 0;
+    background-color: rgba(107, 174, 51, 0.1);
 }
 .listItem {
-    background-color: lighten(grey, 40);
+    //background-color: lighten(grey, 40);
     margin: 0;
     //margin-left: 10px;
+    
     padding: 5px;
     padding-left: 35px;
     list-style: none;
-    text-transform: capitalize;
+    //text-transform: capitalize;
     li {
         list-style: disc;
+        //font-weight: 700;
     }
+    // &:nth-child(odd) {
+    //     font-weight: 700;
+    //     //margin: 0 initial;
+    //     //padding: 0;
+    //     margin-bottom: 0;
+    //     padding-bottom: 0;
+    // }
+}
+
+.listKern {
+    padding: 10px 30px;
 }
 .container {
     color: white;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     margin-bottom: 20px;
-    //border: 1px solid red;
-    
-    //display: flex;
-    //height: 72px;
-    // flex-direction: column;
-    // align-items: center;
-    // align-content: center;
-    // justify-content: center;
+    h3 {
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
 }
