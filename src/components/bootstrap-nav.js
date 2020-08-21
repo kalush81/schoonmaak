@@ -45,8 +45,13 @@ export default function BootstrapNav() {
                 </Link>
               </Nav.Item>
               <Nav.Item as="li">
-                <Link  id='contactBtnId' to="/contact" className={navStyle.contactBtn} activeClassName={navStyle.active}>
+                <Link  /*style={{color: 'gray'}}*/ id='contactBtnId' to="/contact" /*className={navStyle.contactBtn}*/ activeClassName={navStyle.active}>
                   Contact
+                </Link>
+              </Nav.Item>
+              <Nav.Item as="li" /*className={navStyle.bgLink}*/>
+                <Link to="/contact" className={navStyle.contactBtn} activeClassName={navStyle.active}>
+                  offerte
                 </Link>
               </Nav.Item>
             </Nav>
@@ -81,11 +86,7 @@ export default function BootstrapNav() {
                   desinfecteren
                 </Link>
               </Nav.Item>
-              <Nav.Item as="li" className={navStyle.bgLink}>
-                <Link to="/offerte"  activeClassName={navStyle.active}>
-                  offerte
-                </Link>
-              </Nav.Item>
+              
             </Nav>
           </div>
         </Navbar.Collapse>

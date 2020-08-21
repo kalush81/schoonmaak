@@ -26,7 +26,7 @@ export default function Form() {
       <div className="container form-container">
 
         <div className={formStyle.one}>
-          <h1>Vraag vrijblijvend een gesprek met ons aan</h1>
+          <h2>Vraag vrijblijvend een gesprek met ons aan</h2>
           <p className={formStyle.para}>
             VUL HIERONDER JE CONTACTGEGEVENS IN EN WIJ NEMEN CONTACT MET JE OP
           </p>
