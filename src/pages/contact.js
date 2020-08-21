@@ -4,6 +4,7 @@ import contactStyle from '../components/header.module.scss'
 import { contact } from '../texts/text'
 import Article from '../components/article'
 import Forms from '../components/forms'
+import MyFancyForm from '../components/my-fancy-form'
 
 
 export default function Contact() {
@@ -13,10 +14,10 @@ export default function Contact() {
                 <h1 className={contactStyle.figcap}>Contact met Schoonmaak Loont.</h1>
             </header>
             <Article extras={contact}/>
-            <Forms />
-            <div className='full-width-container bar'>
+            <MyFancyForm />
+            {/* <div className='full-width-container bar'>
 
-            </div>
+            </div> */}
         </Layout>
     )
 }

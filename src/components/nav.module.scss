@@ -32,15 +32,15 @@ $colorY: #52ae32;
 .contactBtn {
   //border: 2px solid green;
   padding: 6px;
-  background: linear-gradient(0.25turn, lighten($colorX, 0), lighten($colorY, 0));
+  background: linear-gradient(
+    0.25turn,
+    lighten($colorX, 0),
+    lighten($colorY, 0)
+  );
   border-radius: 10px;
   &:first-child {
     color: white;
   }
-}
-
-.iconSvg {
-  width: 300%;
 }
 
 .active {
@@ -62,14 +62,6 @@ $colorY: #52ae32;
   }
 }
 
-.open {
-  display: flex;
-}
-
-.close {
-  display: none;
-}
-
 .containerNavLinks {
   width: 400px;
   height: 120px;
@@ -83,11 +75,38 @@ $colorY: #52ae32;
 }
 
 .bootstrapNavbar {
+  //height: 140px;
   a {
     color: #52ae32;
     margin: 0 10px;
     text-transform: uppercase;
   }
+ 
+}
+
+.bgLink {
+  //width: 82px;
+  position: relative;
+  top: -9px;
+  background: white;
+  padding: 5px 4px;
+  border-radius: 10px;
+  border: 2px solid green;
+}
+
+a[href='/offerte'] {
+  border-radius: 3px;
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: -webkit-linear-gradient(
+    360deg,
+    lighten($colorX, 0),
+    lighten($colorY, 0)
+  );
+  padding: 3px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 993) {

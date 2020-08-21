@@ -22,38 +22,40 @@ export default function MyFancyForm() {
     },
   }
   return (
-    <div className="container">
-      <div className={fancyFormStyle.fancyFormContainer}>
-        <div className={fancyFormStyle.logoPanel}>
-          <div className={fancyFormStyle.logo}>
+    <div className="fancy-form-container">
+      <div className="container">
+        <div className={fancyFormStyle.fancyFormContainer}>
+          <div className={fancyFormStyle.logoPanel}>
+            {/* <div className={fancyFormStyle.logo}>
             <Icon className={fancyFormStyle.icon} />
-          </div>
-          <div className={fancyFormStyle.descr}>
-            <h2>Welcome</h2>
-            <p>we'd love to hear from you!</p>
-          </div>
-        </div>
-        <div className={fancyFormStyle.formWraper}>
-          <div className={fancyFormStyle.switch}>
-            <div className={fancyFormStyle.btnWrap}>
-              <button onClick={() => toggleActiveForm(!activeForm)}>
-                <span style={activeForm ? myspan.active : myspan.noactive}>
-                  Particulier
-                </span>
-                <span style={activeForm ? myspan.noactive : myspan.active}>
-                  Zakelijk
-                </span>
-              </button>
+          </div> */}
+            <div className={fancyFormStyle.descr}>
+              {/* <h2>Welcome</h2>
+            <p>we'd love to hear from you!</p> */}
             </div>
           </div>
+          <div className={fancyFormStyle.formWraper}>
+            <div className={fancyFormStyle.switch}>
+              <div className={fancyFormStyle.btnWrap}>
+                <button onClick={() => toggleActiveForm(!activeForm)}>
+                  <span style={activeForm ? myspan.active : myspan.noactive}>
+                    Particulier
+                  </span>
+                  <span style={activeForm ? myspan.noactive : myspan.active}>
+                    Zakelijk
+                  </span>
+                </button>
+              </div>
+            </div>
 
-          <h2 style={{ textAlign: "center" }}>
-            Solliciteren als {activeForm ? "Particulier" : "Zakelijk"}
-          </h2>
+            <h2 style={{ textAlign: "center" }}>
+              {activeForm ? "Particulier" : "Zakelijk"}
+            </h2>
 
-          {/* form particulier or form zakelijk*/}
+            {/* form particulier or form zakelijk*/}
 
-          {activeForm ? <FormParticulier /> : <FormZakelijk />}
+            {activeForm ? <FormParticulier /> : <FormZakelijk />}
+          </div>
         </div>
       </div>
     </div>

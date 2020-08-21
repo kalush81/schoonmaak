@@ -85,7 +85,7 @@ export const onze_kernwaardes = [
   },
   {
     id: 5,
-    title: 'CONTINUITEIT',
+    title: 'Continuïteit',
     text: 'We handelen met het oog op de toekomst. We richten ons op langdurige relaties en zorgen voor duurzaam succes. We geven continu vorm aan transformatie.'
   }
   // 'BETROKKEN',

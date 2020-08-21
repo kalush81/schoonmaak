@@ -10,7 +10,7 @@ export default function BootstrapNav() {
   useEffect(() => {
     setWidth(window.innerWidth < 993 ? "80px" : "280px")
     window.addEventListener("resize", () => {
-      window.innerWidth < 993 ? setWidth("80px") : setWidth("280px")
+      window.innerWidth < 993 ? setWidth("80px") : setWidth("260px")
     })
   }, [])
 
@@ -34,11 +34,11 @@ export default function BootstrapNav() {
         <Navbar.Collapse id="navbarResponsive" className="nav-column">
           <div className="ml-auto upperNav">
             <Nav as="ul">
-            <Nav.Item as="li">
+            {/* <Nav.Item as="li">
                 <Link to="/fancy-form" activeClassName={navStyle.active}>
                   fancy form
                 </Link>
-              </Nav.Item>
+              </Nav.Item> */}
               <Nav.Item as="li">
                 <Link to="/overons" activeClassName={navStyle.active}>
                   Over ons
@@ -52,7 +52,7 @@ export default function BootstrapNav() {
             </Nav>
           </div>
           <div
-            className="ml-auto "
+            className="ml-auto"
             style={{ fontWeight: "bold", marginTop: '20px', fontSize: "0.9rem" }}
           >
             <Nav as="ul">
@@ -81,8 +81,8 @@ export default function BootstrapNav() {
                   desinfecteren
                 </Link>
               </Nav.Item>
-              <Nav.Item as="li">
-                <Link to="/offerte" activeClassName={navStyle.active}>
+              <Nav.Item as="li" className={navStyle.bgLink}>
+                <Link to="/offerte"  activeClassName={navStyle.active}>
                   offerte
                 </Link>
               </Nav.Item>
