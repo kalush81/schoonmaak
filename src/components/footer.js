@@ -22,9 +22,9 @@ export default function Footer() {
           <div className={footerStyle.logo}>
             <Icon />
           </div>
-          <div>
+          <div className={footerStyle.contactBlock}>
             <address style={{ fontStyle: "normal" }}>
-              <b>NEDERLANDS</b>
+              <b>NEDERLAND</b>
               <br />
               DAMWOUDESTRAAT 5
               <br />
@@ -35,6 +35,16 @@ export default function Footer() {
               KvK 12345678
               <br />
             </address>
+            <div className={footerStyle.mail}>
+              <span style={{ display: "block" }}>CONTACT</span>
+              
+              <a
+                href="mailto:hallo@schoonmaakloon.nl"
+                style={{ display: "block" }}
+              >
+                hallo@schoonmaakloon.nl
+              </a>
+            </div>
           </div>
           <div>
             <ul>
@@ -50,17 +60,21 @@ export default function Footer() {
           <div>
             <ul>
               <li>
-                <Link to='/'>linkedin</Link>
+                <Link to="/">linkedin</Link>
               </li>
               <li>
-                <Link to='/'>facebook</Link>
+                <Link to="/">facebook</Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div className={footerStyle.disclaimer}>
-        <span>SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN | <Link to='/privacybeleid'>PRIVACY BELEID </Link>| <Link to='/disclaimer'>DISCLAIMER</Link></span>
+        <span>
+          SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN |{" "}
+          <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
+          <Link to="/disclaimer">DISCLAIMER</Link>
+        </span>
       </div>
     </footer>
   )

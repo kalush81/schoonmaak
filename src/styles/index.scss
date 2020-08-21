@@ -9,7 +9,9 @@ $colorY: #52ae32;
   font-family: "SegoeUI" "Droid Sans";
   list-style: none;
 }
-
+ul {
+  margin-left: 0;
+}
 .full-width-container-nav {
   position: relative;
   width: 100%;
