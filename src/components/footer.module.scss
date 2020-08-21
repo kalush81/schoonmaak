@@ -6,6 +6,9 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+  ul {
+    margin-bottom: 0;
+  }
   li {
     list-style: none;
     margin-bottom: 0.6rem;
