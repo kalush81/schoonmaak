@@ -24,7 +24,6 @@ export default function Form() {
   return (
     <div className="full-width-wrap form-full-width">
       <div className="container form-container">
-
         <div className={formStyle.one}>
           <h2>Vraag vrijblijvend een gesprek met ons aan</h2>
           <p className={formStyle.para}>
@@ -68,9 +67,10 @@ export default function Form() {
 
         <div className={formStyle.three}>
           <input type="radio" />
-          {'  '}
+          <span>&nbsp;&nbsp;</span>
           <p style={{ display: "inline" }}>
-  <span>&nbsp;</span> <span>&nbsp;</span> Ik ga akkoord met Schoonmaak Loont Privacy Beleid.
+          <span>&nbsp;&nbsp;</span>
+            Ik ga akkoord met Schoonmaak Loont Privacy Beleid.
           </p>
         </div>
       </div>
