@@ -70,7 +70,7 @@ export default function Form() {
           <input type="radio" />
           {'  '}
           <p style={{ display: "inline" }}>
-            Ik ga akkoord met Schoonmaak Loont Privacy Beleid.
+  <span>&nbsp;</span> <span>&nbsp;</span> Ik ga akkoord met Schoonmaak Loont Privacy Beleid.
           </p>
         </div>
       </div>
