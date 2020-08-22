@@ -1,8 +1,6 @@
 import React, { useState } from "react"
-import Icon from "../assets/asset3.svg"
 import FormParticulier from "./form-particulier"
 import FormZakelijk from "./form-zakelijk"
-
 import fancyFormStyle from "./fancy-form-style.module.scss"
 
 export default function MyFancyForm() {
@@ -15,7 +13,6 @@ export default function MyFancyForm() {
       borderRadius: "17px",
       marginLeft: "2px",
       marginRight: "2px",
-      //padding: '5px 10px'
     },
     noactive: {
       color: "white",
@@ -24,8 +21,10 @@ export default function MyFancyForm() {
   return (
     <div className="fancy-form-container">
       <div className="container">
+        
         <div className={fancyFormStyle.fancyFormContainer}>
-          <div className={fancyFormStyle.logoPanel}>
+
+          <div className={fancyFormStyle.logoPanel} style={{display: 'none'}}>
             {/* <div className={fancyFormStyle.logo}>
             <Icon className={fancyFormStyle.icon} />
           </div> */}
@@ -34,7 +33,9 @@ export default function MyFancyForm() {
             <p>we'd love to hear from you!</p> */}
             </div>
           </div>
+
           <div className={fancyFormStyle.formWraper}>
+
             <div className={fancyFormStyle.switch}>
               <div className={fancyFormStyle.btnWrap}>
                 <button onClick={() => toggleActiveForm(!activeForm)}>
@@ -52,9 +53,8 @@ export default function MyFancyForm() {
               {activeForm ? "Particulier" : "Zakelijk"}
             </h2>
 
-            {/* form particulier or form zakelijk*/}
-
             {activeForm ? <FormParticulier /> : <FormZakelijk />}
+
           </div>
         </div>
       </div>

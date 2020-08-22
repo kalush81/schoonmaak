@@ -36,7 +36,8 @@ address {
 .logo {
   width: 300px;
   display: block;
-  margin-left: -30px;
+  margin: 0 auto;
+  //margin-left: -30px;
 }
 
 .contactBlock {
@@ -67,21 +68,59 @@ address {
   box-shadow: 0px -4px 24px -4px rgba(0, 0, 0, 0.5);
 }
 
+.socialSvgBtns {
+  display: none;
+  width: 100px;
+  height: 50px;
+  background-color: tomato;
+  margin: 0 auto;
+}
+
+.logoAndBtnsSvgBlock {
+  margin-left: -30px;
+  //border: 2px solid tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media (max-width: 500px) {
   .container {
-    font-size: 60%;
+    font-size: 80%;
   }
   .disclaimer {
     font-size: 60%;
   }
+
 }
-@media (max-width: 800px) {
+
+@media (max-width: 599px) {
+  .pageLinksBlock, .socialLinksBlock {
+    display: none;
+    border: 5px solid palevioletred;
+  }
+  .logo {
+    display: block;
+    width: 200px;
+  }
+  .socialSvgBtns {
+    display: block;
+  }
+
+}
+
+@media (max-width: 800px) and (min-width: 600px){
   .container {
 
-    .logo {
-      width: 0px !important;
+    .logoAndBtnsSvgBlock {
+      //width: 0px !important;
       display: none;
 
     }
+  }
+}
+@media (max-width : 359px) {
+  .logo {
+    width: 160px;
   }
 }

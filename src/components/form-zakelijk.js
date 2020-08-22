@@ -11,7 +11,7 @@ export default function FormZakelijk() {
                 <input type="text" placeholder="Functie " />
                 <input type="text" placeholder="Bedrijf *" />
                 <input type="text" placeholder="Sector *" />
-                <div className={fancyFormStyle.gender}>
+                <div className={fancyFormStyle.gender} style={{display: 'none'}}>
                   <input type="radio" />
                   <span> {"  "}</span>
                   <label>Heer</label>

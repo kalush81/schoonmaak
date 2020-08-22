@@ -19,8 +19,11 @@ export default function Footer() {
     <footer className="full-width-wrap">
       <div className="container">
         <div className={footerStyle.container}>
-          <div className={footerStyle.logo}>
-            <Icon />
+          <div className={footerStyle.logoAndBtnsSvgBlock}>
+            <div className={footerStyle.logo}>
+              <Icon />
+            </div>
+            <div className={footerStyle.socialSvgBtns}></div>
           </div>
           <div className={footerStyle.contactBlock}>
             <address style={{ fontStyle: "normal" }}>
@@ -37,7 +40,7 @@ export default function Footer() {
             </address>
             <div className={footerStyle.mail}>
               <span style={{ display: "block" }}>CONTACT</span>
-              
+
               <a
                 href="mailto:hallo@schoonmaakloon.nl"
                 style={{ display: "block" }}
@@ -46,7 +49,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div>
+          <div className={footerStyle.pageLinksBlock}>
             <ul>
               {links.map(link => {
                 return (
@@ -57,7 +60,7 @@ export default function Footer() {
               })}
             </ul>
           </div>
-          <div>
+          <div className={footerStyle.socialLinksBlock}>
             <ul>
               <li>
                 <Link to="/">linkedin</Link>

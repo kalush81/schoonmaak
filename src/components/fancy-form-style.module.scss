@@ -1,18 +1,13 @@
 $colorX: #209ecc;
 $colorY: #52ae32;
 
-//box-shadow: 1px -9px 30px 0px
 .fancy-form-container {
   display: flex;
+  justify-content: flex-end;
   padding: 30px;
   margin: 40px auto;
-  //margin-bottom: 100px;
-  // background: linear-gradient(
-  //   0.25turn,
-  //   lighten($colorX, 0),
-  //   lighten($colorY, 0)
-  // );
-  //box-shadow: 0px 14px 34px 4px lighten(black, 80%);
+  padding-right: 0;
+ 
   input {
     border: 2px solid lighten(black, 80%);
     border-radius: 3px;
@@ -34,7 +29,7 @@ $colorY: #52ae32;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //border: 1px solid green;
+  border: 1px solid green;
 }
 
 .logo {
@@ -53,7 +48,6 @@ $colorY: #52ae32;
   justify-content: space-evenly;
   align-content: space-around;
   width: 70%;
-  //height: 530px;
   //border: 2px solid black;
   background-color: whitesmoke;
   border-radius: 10% / 50%;
@@ -61,13 +55,35 @@ $colorY: #52ae32;
   border-bottom-right-radius: 5px 5px;
 }
 
+@media (max-width: 1059px) {
+  .formWraper {
+    width: 100%;
+  }
+}
+@media (max-width: 799px) {
+  .inputs {
+    flex-direction: column;
+    .formLeftPart, .formRightPart {
+      width: 80%;
+      margin: auto;
+      //text-align: center;
+    }
+  }
+}
+@media (max-width: 379px) {
+  .inputs {
+    .formLeftPart, .formRightPart {
+      width: 90%;
+    }
+  }
+  
+}
 .switch {
   display: flex;
   justify-content: flex-end;
 }
 
 .btnWrap {
-  //width: 200px;
   background: $colorX;
   border-radius: 20px;
   text-align: center;
@@ -78,15 +94,8 @@ $colorY: #52ae32;
   button {
     border: none;
     background: transparent;
-    //color: white;
     padding: 0px 0px;
-    //border-radius: 20px;
-    // &.active {
-    //   color: $colorX;
-    //   background: white;
-    //   border: 2px solid $colorX;
-    //   border-radius: 20px;
-    // }
+
   }
 }
 
@@ -106,7 +115,6 @@ button:focus {
 }
 
 .gender {
-  //border: 1px solid black;
   font-size: small;
   input {
     width: 10px;
@@ -115,11 +123,8 @@ button:focus {
   }
 }
 .buttonDiv {
-  //border: 1px solid purple;
   text-align: right;
   margin-top: 20px;
-  // display: flex ;
-  // justify-content: end;
   button {
     padding: 5px 35px;
     border-radius: 20px;
@@ -139,17 +144,4 @@ button:focus {
         font-size: smaller; 
     }
 }
-// .active {
-//   color: $colorX;
-//   background: white;
-//   border: 2px solid $colorX;
-//   border-radius: 20px;
-// }
-// // span {
-// //     color:  white;
-// //     background: blue;
-// // }
-// .noactive {
-//     color: red;
-//     background: transparent;
-// }
+
