@@ -9,10 +9,17 @@ import sliderStyles from "./slider.module.scss"
 
 
 const style = {
+  header: {
     fontWeight: 'bold', 
     padding: '10px 20px', 
     marginBottom: 0, 
     background: 'rgba(255,255,255, 0.6)'
+  },
+  para: {
+    padding: '10px 20px', 
+    marginBottom: 0, 
+    background: 'rgba(255,255,255, 0.6)'
+  }
 }
 
 const AutoplaySlider = withAutoplay(AwesomeSlider)
@@ -26,8 +33,8 @@ export default function Header({ page, title }) {
           data-src={require("../../static/images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
         >
           <div data-type="caption">
-            <h2 style={style}>ONS VISIE</h2>
-            <p>
+            <h2 style={style.header}>ONS VISIE</h2>
+            <p style={style.para}>
               Bij ons werk vormt duurzaamheid een belangrijke pijler. We hebben
               oog voor het milieu en gaan voor een samenwerking op de lange
               termijn.
