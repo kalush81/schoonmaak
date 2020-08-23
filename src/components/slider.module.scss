@@ -24,3 +24,10 @@
 //         }
 //     }
 // }
+.container {
+    border: 10px solid black;
+    nav {
+        z-index: 200;
+        bottom: -20px;
+    }
+}

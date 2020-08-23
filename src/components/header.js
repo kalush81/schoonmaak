@@ -1,7 +1,6 @@
 import React from "react"
 import headerStyle from "./header.module.scss"
 import withAutoplay from "react-awesome-slider/dist/autoplay"
-//import CaptionedHoc from "react-awesome-slider/src/hoc/captioned-images/hoc"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
 import "react-awesome-slider/dist/captioned.css"
@@ -9,6 +8,12 @@ import sliderStyles from "./slider.module.scss"
 
 
 const style = {
+  container: {
+    border: '10px solid black',
+  },
+  imageContainer: {
+    height: '100%'
+  },
   header: {
     fontWeight: 'bold', 
     padding: '10px 20px', 
@@ -26,9 +31,9 @@ const AutoplaySlider = withAutoplay(AwesomeSlider)
 export default function Header({ page, title }) {
   if (page === "home") {
     return (
-      <AutoplaySlider play={false} interval={4000}>
+      <AutoplaySlider play={false} interval={4000} className={sliderStyles.container}>
         <div
-          //className={sliderStyles.container}
+          style={style.imageContainer}
           title="Duurzaamheid_Schoonmaak"
           data-src={require("../../static/images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
         >
