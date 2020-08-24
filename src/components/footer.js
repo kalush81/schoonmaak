@@ -87,15 +87,21 @@ export default function Footer() {
       </div>
       <div className={footerStyle.disclaimer}>
         <span>
-          SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN |{" "}
-          <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
-          <Link to="/disclaimer">DISCLAIMER</Link>
-          <a href="/Àlgemene_voorwaarden_Schoonmaak_Loont.pdf" target="_blank" download>
+        SCHOONMAAK LOONT © 2020 | 
+          <a
+            href="/Àlgemene_voorwaarden_Schoonmaak_Loont.pdf"
+            target="_blank"
+            download
+          >
             <FontAwesomeIcon
               icon={faDownload}
               style={{ margin: "0 10px" }}
             ></FontAwesomeIcon>
+            ALGEMENE VOORWAARDEN 
           </a>
+            {' '}|{' '}
+          <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
+          <Link to="/disclaimer">DISCLAIMER</Link>
         </span>
       </div>
     </footer>
