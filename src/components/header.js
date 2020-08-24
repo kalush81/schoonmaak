@@ -30,8 +30,8 @@ export default function Header({ page, title }) {
   if (page === "home") {
     return (
       <AutoplaySlider
-        play={false}
-        interval={4000}
+        play={true}
+        interval={6000}
         className={sliderStyles.container}
       >
         <div
