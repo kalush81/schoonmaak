@@ -31,23 +31,21 @@ export default function Header({ page, title }) {
   if (page === "home") {
     return (
       <AutoplaySlider
-        play={false}
+        play={true}
         interval={6000}
         className={sliderStyles.container}
       >
         <div
-          title="Duurzaamheid_Schoonmaak"
-          data-src={require("../../static/images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
+          title="Milieu_Vriendelijk_Schoonmaak"
+          data-src={require("../../static/images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
         >
           <div data-type="caption">
-            {/* <div className="container"> */}
-              <h2 style={style.header}>ons visie</h2>
-              <p>
-                Bij ons werk vormt duurzaamheid een belangrijke pijler. We
-                hebben oog voor het milieu en gaan voor een samenwerking op de
-                lange termijn.
-              </p>
-            {/* </div> */}
+            <h2 style={style.header}>ONS MISSIE</h2>
+            <p>
+              Schoonmaak Loont focust op kwaliteit en zorgt ervoor dat geniet u
+              van een schoon en representatief resultaat, zonder dat u ergens
+              omkijken naar heeft.
+            </p>
           </div>
         </div>
         <div
@@ -63,16 +61,18 @@ export default function Header({ page, title }) {
           </div>
         </div>
         <div
-          title="Milieu_Vriendelijk_Schoonmaak"
-          data-src={require("../../static/images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
+          title="Duurzaamheid_Schoonmaak"
+          data-src={require("../../static/images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
         >
           <div data-type="caption">
-            <h2 style={style.header}>ONS MISSIE</h2>
-            <p>
-              Schoonmaak Loont focust op kwaliteit en zorgt ervoor dat geniet u
-              van een schoon en representatief resultaat, zonder dat u ergens
-              omkijken naar heeft.
-            </p>
+            {/* <div className="container"> */}
+              <h2 style={style.header}>ons visie</h2>
+              <p>
+                Bij ons werk vormt duurzaamheid een belangrijke pijler. We
+                hebben oog voor het milieu en gaan voor een samenwerking op de
+                lange termijn.
+              </p>
+            {/* </div> */}
           </div>
         </div>
       </AutoplaySlider>
