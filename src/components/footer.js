@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import footerStyle from "./footer.module.scss"
 import navStyle from "./nav.module.scss"
 import Icon from "../assets/asset3.svg"
+import { FaBeer } from 'react-icons/fa';
 
 export default function Footer() {
   const links = [
@@ -54,7 +55,7 @@ export default function Footer() {
               {links.map(link => {
                 return (
                   <li key={link}>
-                    <Link to={`/${link === "home" ? "" : link}`}>{link}</Link>
+                    <Link to={`/${link === "home" ? "" : link === 'offerte' ? 'contact': link}`}>{link}</Link>
                   </li>
                 )
               })}
@@ -75,6 +76,7 @@ export default function Footer() {
       <div className={footerStyle.disclaimer}>
         <span>
           SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN |{" "}
+          <FaBeer />
           <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
           <Link to="/disclaimer">DISCLAIMER</Link>
         </span>
