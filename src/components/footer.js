@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import footerStyle from "./footer.module.scss"
 import navStyle from "./nav.module.scss"
 import Icon from "../assets/asset3.svg"
-import { FaBeer } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+//import { FaBeer } from "react-icons/fa"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faDownload } from "@fortawesome/free-solid-svg-icons"
 
 export default function Footer() {
   const links = [
@@ -57,7 +57,17 @@ export default function Footer() {
               {links.map(link => {
                 return (
                   <li key={link}>
-                    <Link to={`/${link === "home" ? "" : link === 'offerte' ? 'contact': link}`}>{link}</Link>
+                    <Link
+                      to={`/${
+                        link === "home"
+                          ? ""
+                          : link === "offerte"
+                          ? "contact"
+                          : link
+                      }`}
+                    >
+                      {link}
+                    </Link>
                   </li>
                 )
               })}
@@ -78,10 +88,14 @@ export default function Footer() {
       <div className={footerStyle.disclaimer}>
         <span>
           SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN |{" "}
-          <FaBeer />
-          <FontAwesomeIcon icon={faCoffee} />
           <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
           <Link to="/disclaimer">DISCLAIMER</Link>
+          <a href="/text.txt" target="_blank" download>
+            <FontAwesomeIcon
+              icon={faDownload}
+              style={{ margin: "0 10px" }}
+            ></FontAwesomeIcon>
+          </a>
         </span>
       </div>
     </footer>
