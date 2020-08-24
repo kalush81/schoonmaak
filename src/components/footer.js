@@ -90,7 +90,7 @@ export default function Footer() {
           SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN |{" "}
           <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
           <Link to="/disclaimer">DISCLAIMER</Link>
-          <a href="/text.txt" target="_blank" download>
+          <a href="/Àlgemene_voorwaarden_Schoonmaak_Loont.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={faDownload}
               style={{ margin: "0 10px" }}
