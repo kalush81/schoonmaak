@@ -6,12 +6,7 @@ export default function FormZakelijk() {
         <form>
             <div className={fancyFormStyle.inputs}>
               <div className={fancyFormStyle.formLeftPart}>
-                <input type="text" placeholder="Voornam *" />
-                <input type="text" placeholder="Achternaam *" />
-                <input type="text" placeholder="Functie " />
-                <input type="text" placeholder="Bedrijf *" />
-                <input type="text" placeholder="Sector *" />
-                <div className={fancyFormStyle.gender} style={{display: 'none'}}>
+                <div className={fancyFormStyle.gender} >
                   <input type="radio" />
                   <span> {"  "}</span>
                   <label>Heer</label>
@@ -21,8 +16,23 @@ export default function FormZakelijk() {
                   <span> {"  "}</span>
                   <label>Mevrouw</label>
                 </div>
+                <input type="text" placeholder="Voornam *" />
+                <input type="text" placeholder="Achternaam *" />
+                <input type="text" placeholder="Functie " />
+                <input type="text" placeholder="Bedrijf *" />
+                <input type="text" placeholder="Sector *" />
               </div>
               <div className={fancyFormStyle.formRightPart}>
+              <div className={fancyFormStyle.gender} style={{visibility: 'hidden'}}>
+                  <input type="radio" />
+                  <span> {"  "}</span>
+                  <label>Heer</label>
+                  
+                  <span> {"  "}</span>
+                  <input type="radio" />
+                  <span> {"  "}</span>
+                  <label>Mevrouw</label>
+                </div>
                 <input type="text" placeholder="E-mail *" />
                 <input type="text" placeholder="Telefoon *" />
                 <input type="text" placeholder="Adres *" />
