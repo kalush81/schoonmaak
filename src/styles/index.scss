@@ -12,8 +12,13 @@ $colorY: #52ae32;
 
 main div.awssld__container {
   padding-bottom: 40%;
+  //height: 600px;
 }
-
+@media (max-width: 600px) {
+  main div.awssld__container {
+    padding-bottom: 60%;
+  }
+}
 ul {
   margin-left: 0;
 }
@@ -111,7 +116,6 @@ main {
   html {
     font-size: 130%;
   }
-  
 }
 
 @media (max-width: 499px) {
