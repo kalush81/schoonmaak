@@ -15,11 +15,12 @@ const style = {
   header: {
     fontWeight: "bold",
     textTransform: 'uppercase',
+    fontSize: 'big'
     //padding: "10px 20px",
     //marginBottom: 0,
   },
   para: {
-    padding: "10px 20px",
+    padding: "20px 20px",
     marginBottom: 0,
     //background: 'rgba(255,255,255, 0.6)'
   },
@@ -30,7 +31,7 @@ export default function Header({ page, title }) {
   if (page === "home") {
     return (
       <AutoplaySlider
-        play={true}
+        play={false}
         interval={6000}
         className={sliderStyles.container}
       >

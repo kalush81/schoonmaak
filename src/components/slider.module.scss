@@ -34,7 +34,7 @@
   div[data-type="caption"] {
     display: flex;
     width: 60%;
-    height: 25%;
+    height: 0%;
     padding: 0;
     //border: 2px solid red;
     top: 50%;
@@ -45,7 +45,8 @@
     justify-content: space-evenly;
     h2,
     p {
-      background: rgba(255, 255, 255, 0.7);
+      width: 100%;
+      background: rgba(255, 255, 255, 0.5);
       font-size: larger;
       display: block;
       color: black;
@@ -53,10 +54,15 @@
       align-self: baseline;
       display: block;
       margin: 0;
-      padding: 10px 20px;
+      padding: 20px 20px;
     }
     h2 {
+    font-size: 2em;
       margin: 0;
+      padding-bottom: 3px;
+    }
+    p {
+        padding-top: 3px;
     }
   }
 }
@@ -65,6 +71,7 @@
         div[data-type="caption"] {
             width: 80%;
             h2, p {
+                width: 100%;
                 font-size: 2.5vw;
             }
         }
@@ -73,14 +80,15 @@
 @media (max-width: 520px) {
   .container {
     div[data-type="caption"] {
-        //border: 2px solid red;
-        //overflow: hidden;
       width: 100%;
-      margin-left: 0;
-      
+      margin-left: 0;    
       h2, p {
+          width: 100%;
           padding-left: 10%;
           padding-right: 10%;
+      }
+      p {
+          padding-top: 6px;
       }
     }
   }
@@ -89,9 +97,10 @@
 @media (min-width: 1100px) {
     .container {
         div[data-type="caption"] {
-            background: rgba(255, 255, 255, 0.5);
-          p, h2 {
             background: none;
+          p, h2 {
+            //background: rgba(255, 255, 255, 0.5);
+            //background: none;
           }
         }
       }
