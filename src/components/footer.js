@@ -4,6 +4,8 @@ import footerStyle from "./footer.module.scss"
 import navStyle from "./nav.module.scss"
 import Icon from "../assets/asset3.svg"
 import { FaBeer } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   const links = [
@@ -77,6 +79,7 @@ export default function Footer() {
         <span>
           SCHOONMAAK LOONT © 2020 | ALGEMENE VOORWAARDEN |{" "}
           <FaBeer />
+          <FontAwesomeIcon icon={faCoffee} />
           <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
           <Link to="/disclaimer">DISCLAIMER</Link>
         </span>
