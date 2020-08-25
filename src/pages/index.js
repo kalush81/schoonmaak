@@ -10,9 +10,9 @@ export default function Home() {
   return (
     <Layout>
       <Seo
-        title="Wij dragen bij aan het Milieu"
-        description="U zoekt een bedrijf dat mileubewust is op zijn dienstverlening. Dat net als u bewust is op het realiseren van uw doelstellingen."
-        meta='xxx'
+        title="schoonmaak loont" 
+        description="schoonmaak loont uw milieubewuste dienstverlener"
+        meta="something else specific to home page"
       />
       <Header page="home" title="Wij dragen bij aan het Milieu." />
       <figcaption className={headerStyle.figcap}>

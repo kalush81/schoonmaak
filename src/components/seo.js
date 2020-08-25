@@ -13,9 +13,9 @@ export default function Seo({ description, lang = "nl", meta, title }) {
         },
         {
           name: "keywords",
-          content: ["dupa, pizda"],
+          content: ["schoonmaak loont", "milieubewuste", ""],
         },
-      ].concat(meta)}
+      ].concat(', ')}
     ></Helmet>
   )
 }
