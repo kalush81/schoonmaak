@@ -1,5 +1,0 @@
-Sitemap: https://zen-swirles-6c209d.netlify.app/particulier
-Sitemap: https://zen-swirles-6c209d.netlify.app/ramenwassen
-Sitemap: https://zen-swirles-6c209d.netlify.app/particulier
-Sitemap: https://zen-swirles-6c209d.netlify.app/zakelijk
-Sitemap: https://zen-swirles-6c209d.netlify.app/desinfecteren
