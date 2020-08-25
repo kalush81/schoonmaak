@@ -10,7 +10,6 @@ export default function FormZakelijk() {
                   <input type="radio" />
                   <span> {"  "}</span>
                   <label>Heer</label>
-                  
                   <span> {"  "}</span>
                   <input type="radio" />
                   <span> {"  "}</span>
@@ -26,8 +25,7 @@ export default function FormZakelijk() {
               <div className={fancyFormStyle.gender} style={{visibility: 'hidden'}}>
                   <input type="radio" />
                   <span> {"  "}</span>
-                  <label>Heer</label>
-                  
+                  <label>Heer</label>            
                   <span> {"  "}</span>
                   <input type="radio" />
                   <span> {"  "}</span>
