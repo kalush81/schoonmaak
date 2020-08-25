@@ -25,7 +25,14 @@ export default function Seo({ description, lang = "nl", meta, title }) {
         },
         {
           name: "keywords",
-          content: ["schoonmaak loont", "milieubewuste"],
+          content: [
+            "schoonmaakbedrijf",
+            "schoonmaak loont",
+            "milieubewuste",
+            "Tilburg",
+            "Nederland",
+            "schoonmaakbedrijf tilburg nederland",
+          ],
         },
         {
           name: "google-site-verification",
