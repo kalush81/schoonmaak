@@ -12,7 +12,7 @@ export default function Ramenwassen() {
         title="schoonmaakbedrijf ramenwassen Tilburg schoonmaak loont"
         description="Ramen zijn ons bezoek en moet er onberispelijk uitzien, en schone ramen zijn een determinant van zorg voor orde.
 Gewassen ramen, kozijnen en vensterbanken maken de ruimte natuurlijker licht en de werkplek maakt een betere indruk."
-        meta={["a", "b"]}
+        meta={["ramen wassen", "glazen wassen"]}
       />
       <Header page="ramenwassen" title="Ook gespecialiseerd in ramenwassen." />
       {/* <Article tekst='raam pakket' textSize='uppercase'/>

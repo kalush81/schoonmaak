@@ -11,6 +11,7 @@ export default function Particulier() {
       <Header
         page="particulier"
         title="Ook bij U thuis maken wij met plezier schoon."
+        meta={["particulier wassen", "particulier schoonmaak"]}
       />
       <div className="article-text-container">
         <Article tekst="particulier" textSize="uppercase" />

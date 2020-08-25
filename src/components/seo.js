@@ -32,6 +32,9 @@ export default function Seo({ description, lang = "nl", meta, title }) {
             "Tilburg",
             "Nederland",
             "schoonmaakbedrijf tilburg nederland",
+            "ramen wassen", 
+            "glazen wassen",
+            "particulier schoon"
           ],
         },
         {
