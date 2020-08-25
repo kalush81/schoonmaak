@@ -12,10 +12,26 @@ export default function Seo({ description, lang = "nl", meta, title }) {
           content: description,
         },
         {
-          name: "keywords",
-          content: ["schoonmaak loont", "milieubewuste", ""],
+          property: `og:title`,
+          content: title,
         },
-      ].concat(', ')}
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
+          name: `twitter:creator`,
+          content: "Michael Van Loon",
+        },
+        {
+          name: "keywords",
+          content: ["schoonmaak loont", "milieubewuste"],
+        },
+        {
+          name: "google-site-verification",
+          content: "clELBBpwtzkXqxHl-Xivchxvd4w1FnHtC59g3yYc59k",
+        },
+      ].concat(meta)}
     ></Helmet>
   )
 }
