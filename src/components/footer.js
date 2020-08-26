@@ -58,7 +58,7 @@ export default function Footer() {
               <br />
               +31 (0) 6 29 26 27 99
               <br />
-              KvK 12345678
+              KvK 80128629
               <br />
             </address>
             <div className={footerStyle.mail}>

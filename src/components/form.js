@@ -32,7 +32,11 @@ export default function Form() {
         </div>
 
         <div className={formStyle.two}>
-          <form className={formStyle.container} onSubmit={handleSubmit}>
+          <form 
+          name="main-form"
+          netlify={true}
+          className={formStyle.container} 
+          onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">naam</label>
               <input

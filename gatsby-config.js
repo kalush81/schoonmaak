@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    siteUrl: `https://zen-swirles-6c209d.netlify.app/`,
+    siteUrl: `https://www.schoonmaakloont.nl/`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
