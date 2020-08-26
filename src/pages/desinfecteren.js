@@ -84,7 +84,7 @@ export default function Desinfecteren() {
           die moet worden besteed aan ozon. Wilt u meer weten over
           kantoorruimte, neem dan contact met ons op via 0629262799 of e-mail:
         </p>
-        <a href='mailto:hallo@schoonmaakloon.nl'>hallo@schoonmaakloon.nl</a>
+        <a href='mailto:hallo@schoonmaakloont.nl'>hallo@schoonmaakloont.nl</a>
         </div>
       </Article>
     </Layout>

@@ -68,7 +68,7 @@ export default function Footer() {
                 href="mailto:hallo@schoonmaakloont.nl"
                 style={{ display: "block" }}
               >
-                hallo@schoonmaakloon.nl
+                hallo@schoonmaakloont.nl
               </a>
             </div>
           </div>
