@@ -1,6 +1,12 @@
 import React, { useState } from "react"
 import formStyle from "./form.module.scss"
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 export default function Form() {
   const [formState, setFormState] = useState({
     name: "",
@@ -15,11 +21,23 @@ export default function Form() {
     })
   }
 
+  
   const handleSubmit = e => {
-    e.preventDefault()
-    console.log("form submitted")
-    return null
-  }
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formState })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+    setFormState({
+      name: '',
+      email: '',
+      number: ''
+    })
+  };
 
   return (
     <div className="full-width-wrap form-full-width">
@@ -33,21 +51,18 @@ export default function Form() {
 
         <div className={formStyle.two}>
           <form 
-          method="post"
           name="contact"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
           className={formStyle.container} 
-          //onSubmit={handleSubmit}>
-          >
+          onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name">naam</label>
               <input
                 className={formStyle.input}
                 name="name"
                 type="text"
-                //onChange={handleChange}
-                //value={formState.name}
+                onChange={handleChange}
+                value={formState.name}
               />
             </div>
             <div>
@@ -55,8 +70,8 @@ export default function Form() {
               <input
                 name="number"
                 type="number"
-                //onChange={handleChange}
-                //value={formState.number}
+                onChange={handleChange}
+                value={formState.number}
               />
             </div>
             <div>
@@ -64,8 +79,8 @@ export default function Form() {
               <input
                 name="email"
                 type="email"
-                //onChange={handleChange}
-                //value={formState.email}
+                onChange={handleChange}
+                value={formState.email}
               />
             </div>
             <button type="submit">stuur bericht </button>
