@@ -6,6 +6,9 @@ import Icon from "../assets/asset3.svg"
 //import { FaBeer } from "react-icons/fa"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
+import fb from "../../static/images/social-icons/fb.png"
+import linkedin from "../../static/images/social-icons/linkedin.png"
+import whatsapp from "../../static/images/social-icons/whatsapp.png"
 
 export default function Footer() {
   const links = [
@@ -26,7 +29,24 @@ export default function Footer() {
             <div className={footerStyle.logo}>
               <Icon />
             </div>
-            <div className={footerStyle.socialSvgBtns}></div>
+            <div
+              className={footerStyle.socialSvgBtns}
+              style={{ margin: "0 auto" }}
+            >
+              <Link to="/">
+                <img src={fb} className={footerStyle.socialBtn} />
+              </Link>
+
+              <Link to="/">
+                <img src={linkedin} className={footerStyle.socialBtn} />
+              </Link>
+              <Link to="/">
+                <img src={whatsapp} className={footerStyle.socialBtn} />
+              </Link>
+
+              {/*<In />
+              <Wa /> */}
+            </div>
           </div>
           <div className={footerStyle.contactBlock}>
             <address style={{ fontStyle: "normal" }}>
@@ -87,7 +107,7 @@ export default function Footer() {
       </div>
       <div className={footerStyle.disclaimer}>
         <span>
-        SCHOONMAAK LOONT © 2020 | 
+          SCHOONMAAK LOONT © 2020 |
           <a
             href="/Àlgemene_voorwaarden_Schoonmaak_Loont.pdf"
             target="_blank"
@@ -97,10 +117,9 @@ export default function Footer() {
               icon={faDownload}
               style={{ margin: "0 10px" }}
             ></FontAwesomeIcon>
-            ALGEMENE VOORWAARDEN 
-          </a>
-            {' '}|{' '}
-          <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
+            ALGEMENE VOORWAARDEN
+          </a>{" "}
+          | <Link to="/privacybeleid">PRIVACY BELEID </Link>|{" "}
           <Link to="/disclaimer">DISCLAIMER</Link>
         </span>
       </div>

@@ -28,7 +28,7 @@
 }
 address {
   br {
-    content: '';
+    content: "";
     display: block;
     height: 10px;
   }
@@ -70,10 +70,12 @@ address {
 
 .socialSvgBtns {
   display: none;
-  width: 100px;
-  height: 50px;
-  background-color: tomato;
-  margin: 0 auto;
+  width: 140px;
+  justify-content: space-between;
+  //height: 50px;
+  //background-color: tomato;
+  margin: 0px auto;
+  //margin-bottom: -10px;
 }
 
 .logoAndBtnsSvgBlock {
@@ -83,7 +85,11 @@ address {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.socialBtn {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+}
 @media (max-width: 500px) {
   .container {
     font-size: 80%;
@@ -91,11 +97,11 @@ address {
   .disclaimer {
     font-size: 60%;
   }
-
 }
 
 @media (max-width: 599px) {
-  .pageLinksBlock, .socialLinksBlock {
+  .pageLinksBlock,
+  .socialLinksBlock {
     display: none;
     border: 5px solid palevioletred;
   }
@@ -104,23 +110,28 @@ address {
     width: 200px;
   }
   .socialSvgBtns {
-    display: block;
+    display: flex;
   }
-
 }
 
-@media (max-width: 800px) and (min-width: 600px){
+@media (max-width: 800px) and (min-width: 600px) {
   .container {
-
     .logoAndBtnsSvgBlock {
       //width: 0px !important;
       display: none;
-
     }
   }
 }
-@media (max-width : 359px) {
+@media (max-width: 359px) {
   .logo {
     width: 160px;
+  }
+  .socialSvgBtns {
+    width: 100px;
+  }
+  .socialBtn {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
   }
 }
