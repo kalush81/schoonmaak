@@ -33,11 +33,13 @@ export default function Form() {
 
         <div className={formStyle.two}>
           <form 
+          method="post"
           name="contact"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           className={formStyle.container} 
-          onSubmit={handleSubmit}>
+          //onSubmit={handleSubmit}>
+          >
             <div>
               <label htmlFor="name">naam</label>
               <input
