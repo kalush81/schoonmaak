@@ -46,8 +46,8 @@ export default function Form() {
                 className={formStyle.input}
                 name="name"
                 type="text"
-                onChange={handleChange}
-                value={formState.name}
+                //onChange={handleChange}
+                //value={formState.name}
               />
             </div>
             <div>
@@ -55,8 +55,8 @@ export default function Form() {
               <input
                 name="number"
                 type="number"
-                onChange={handleChange}
-                value={formState.number}
+                //onChange={handleChange}
+                //value={formState.number}
               />
             </div>
             <div>
@@ -64,8 +64,8 @@ export default function Form() {
               <input
                 name="email"
                 type="email"
-                onChange={handleChange}
-                value={formState.email}
+                //onChange={handleChange}
+                //value={formState.email}
               />
             </div>
             <button type="submit">stuur bericht </button>
