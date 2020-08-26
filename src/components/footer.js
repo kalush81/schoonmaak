@@ -65,7 +65,7 @@ export default function Footer() {
               <span style={{ display: "block" }}>CONTACT</span>
 
               <a
-                href="mailto:hallo@schoonmaakloon.nl"
+                href="mailto:hallo@schoonmaakloont.nl"
                 style={{ display: "block" }}
               >
                 hallo@schoonmaakloon.nl
