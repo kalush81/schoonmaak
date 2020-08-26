@@ -45,7 +45,7 @@ export const basis_zakelijk = [
 	'- Stofzuigende tapijten,',
 	'- Vloeren wassen, trappen,',
 	'- Het legen van vuilnisbakken,',
-	'- Ik geef om de netheid van de keuken en kitchenettes in de kantoren met een speciale focus op gerechten, koffiemachines en waterdistributeurs',
+	'- Wij zorgen voor de netheid van de keuken en kitchenettes in de kantoren, koffiemachines en waterdistributeurs',
 	'- Wassen van sanitaire voorzieningen en spiegels',
 ]
 

@@ -1,11 +1,12 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 
-export default function Seo({ description, lang = "nl", meta, title }) {
+export default function Seo({ description, lang = "nl", meta, title, rel }) {
   return (
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
+      
       meta={[
         {
           name: "description",
@@ -42,6 +43,10 @@ export default function Seo({ description, lang = "nl", meta, title }) {
           content: "clELBBpwtzkXqxHl-Xivchxvd4w1FnHtC59g3yYc59k",
         },
       ].concat(meta)}
-    ></Helmet>
+    >
+      <link rel="canonical" href="https://zen-swirles-6c209d.netlify.app/ramenwassen" />
+      <link rel="canonical" href="https://zen-swirles-6c209d.netlify.app/particulier" />
+      
+    </Helmet>
   )
 }

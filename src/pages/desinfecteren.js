@@ -22,11 +22,10 @@ export default function Desinfecteren() {
         <h3>OZON BIJ CORONAVIRUS</h3>
         <p>
           Is ozon effectief bij coronavirus? Ja, ozon vernietigt alle virussen
-          in de lucht op oppervlakken, materialen en voor- werpen in de juiste
+          in de lucht op oppervlakken, materialen en voorwerpen in de juiste
           concentratie. Het ozonproces van lokalen moet echter naar behoren
           worden uitgevoerd, het is belangrijk om deze kwestie aan specialisten
-          toe te vertrouwen. Ozon wordt aanbevolen voor ontsmetting van loka-
-          len na quarantaine.
+          toe te vertrouwen. Ozon wordt aanbevolen voor ontsmetting van lokalen na quarantaine.
         </p>
         <h3>OZON - EEN EFFECTIEVE ONTSMETTINGSMETHODE</h3>
         <p>
@@ -57,7 +56,7 @@ export default function Desinfecteren() {
           </li>
           <li>
             Meestal is een paar uur gebruik van de machine voldoende voor
-            desinfectie en het juiste brouwen van de ge middelde ruimte. Het
+            desinfectie en het juiste brouwen van de gemiddelde ruimte. Het
             hangt echter allemaal af van de mate van luchtvervuiling en de
             omvang/volume van de ruimte.
           </li>

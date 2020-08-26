@@ -15,7 +15,7 @@ export default function Footer() {
     "ramenwassen",
     "desinfecteren",
     "contact",
-    "overons",
+    "over ons",
     "offerte",
   ]
   return (

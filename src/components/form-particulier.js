@@ -15,7 +15,7 @@ export default function FormParticulier() {
                   <span> {"  "}</span>
                   <label>Mevrouw</label>
                 </div>
-                <input type="text" placeholder="Voornam *" />
+                <input type="text" placeholder="Voornaam *" />
                 <input type="text" placeholder="Achternaam *" />
                 <input type="text" placeholder="Bedrijf *" />
                 <input type="text" placeholder="Sector *" />

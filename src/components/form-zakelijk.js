@@ -15,7 +15,7 @@ export default function FormZakelijk() {
                   <span> {"  "}</span>
                   <label>Mevrouw</label>
                 </div>
-                <input type="text" placeholder="Voornam *" />
+                <input type="text" placeholder="Voornaam *" />
                 <input type="text" placeholder="Achternaam *" />
                 <input type="text" placeholder="Functie " />
                 <input type="text" placeholder="Bedrijf *" />
@@ -35,7 +35,7 @@ export default function FormZakelijk() {
                 <input type="text" placeholder="Telefoon *" />
                 <input type="text" placeholder="Adres *" />
                 <input type="text" placeholder="Postcode *" />
-                <input type="text" placeholder="Plats *" />
+                <input type="text" placeholder="Plaats *" />
                 <div className={fancyFormStyle.textAreaDiv}>
                   <textarea
                     style={{ width: "100%" }}
