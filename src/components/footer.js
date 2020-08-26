@@ -83,6 +83,8 @@ export default function Footer() {
                           ? ""
                           : link === "offerte"
                           ? "contact"
+                          : link === 'over ons'
+                          ? "overons"
                           : link
                       }`}
                     >
