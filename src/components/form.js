@@ -33,8 +33,9 @@ export default function Form() {
 
         <div className={formStyle.two}>
           <form 
-          name="main-form"
-          netlify={true}
+          name="contact"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
           className={formStyle.container} 
           onSubmit={handleSubmit}>
             <div>
