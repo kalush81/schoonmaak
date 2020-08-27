@@ -24,7 +24,7 @@ export default function BootstrapNav() {
         className={navStyle.bootstrapNavbar}
         //justify-con
       >
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="https://www.schoonmaakloont.nl">
           <div className={navStyle.logo}>
             <Icon style={{ width: myWidth }} />
           </div>

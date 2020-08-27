@@ -44,14 +44,14 @@ export default function Seo({ description, lang = "nl", meta, title, rel }) {
         },
       ].concat(meta)}
     >
-      <link rel="canonical" href="https://www.schoonmaakloont.nl/particulier" />
-      <link rel="canonical" href="https://www.schoonmaakloont.nl/ramenwassen" />
+      <link rel="canonical" href="https://www.schoonmaakloont.nl/sitemap.xml" />
+      {/* <link rel="canonical" href="https://www.schoonmaakloont.nl/ramenwassen" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/zakelijk" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/overons" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/contact" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/desinfecteren" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/privacybeleid" />
-      <link rel="canonical" href="https://www.schoonmaakloont.nl/disclaimer" />
+      <link rel="canonical" href="https://www.schoonmaakloont.nl/disclaimer" /> */}
       
     </Helmet>
   )
