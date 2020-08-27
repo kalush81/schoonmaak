@@ -29,18 +29,24 @@ export default function FormParticulier() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "fancy-contact", ...formState })
+      body: encode({ "form-name": "fancy-contact", ...formState }),
     })
       .then(() => {
-        console.log('sent from fancy contact: ', formState)  
+        console.log("sent from fancy contact: ", formState)
         alert("Success!")
-      }) 
-      .catch(error => alert(error));
+      })
+      .catch(error => alert(error))
     //e.preventDefault()
     //console.log("you clicked submit button on particulier")
   }
   return (
-    <form name='fancy-contact' onSubmit={handleSubmit}>
+    <form
+      name="fancy-contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
+    >
       <div className={fancyFormStyle.inputs}>
         <div className={fancyFormStyle.formLeftPart}>
           <div className={fancyFormStyle.gender}>
