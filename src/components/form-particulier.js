@@ -87,15 +87,15 @@ export default function FormParticulier() {
           <input
             type="text"
             name="companyName"
-            placeholder="Bedrijf *"
+            placeholder="Bedrijf"
             onChange={handleInputChange}
             value={formState.companyName}
-            required
+            
           />
           <input
             type="text"
             name="sector"
-            placeholder="Sector *"
+            placeholder="Sector"
             onChange={handleInputChange}
             value={formState.sector}
             required
@@ -125,10 +125,9 @@ export default function FormParticulier() {
           <input
             type="text"
             name="phonenumber"
-            placeholder="Telefoon *"
+            placeholder="Telefoon"
             onChange={handleInputChange}
             value={formState.phonenumber}
-            required
           />
           <div className={fancyFormStyle.textAreaDiv}>
             <textarea
@@ -136,10 +135,9 @@ export default function FormParticulier() {
               style={{ width: "100%" }}
               rows="3"
               type="text"
-              placeholder="Waar kunnen we u mee helpen? *"
+              placeholder="Waar kunnen we u mee helpen?"
               onChange={handleInputChange}
               value={formState.message}
-              required
             />
           </div>
           {/* <input type="text" placeholder="Enter Your Answer *" /> */}
