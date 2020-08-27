@@ -10,7 +10,7 @@ const initialFormState = {
   email: "",
   phonenumber: "",
   message: "",
-  gender: "Mevrouw",
+  gender: "Heer",
 }
 
 export default function FormParticulier() {
@@ -31,7 +31,7 @@ export default function FormParticulier() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "fancy-contact", ...formState }),
+      body: encode({ "form-name": "fancy-contact-particulier", ...formState }),
     })
       .then(() => {
         console.log("sent from fancy contact: ", formState)
@@ -44,7 +44,7 @@ export default function FormParticulier() {
   }
   return (
     <form
-      name="fancy-contact"
+      name="fancy-contact-particulier"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
