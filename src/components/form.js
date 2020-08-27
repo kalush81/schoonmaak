@@ -28,7 +28,6 @@ export default function Form() {
 
   
   const handleSubmit = e => {
-    //console.log({...formState})
     if (formState.checked) {
       console.log('form can be send', formState)
     fetch("/", {
@@ -39,13 +38,13 @@ export default function Form() {
       .then(() => alert("Success!"))
       .catch(error => alert(error));
 
-    //e.preventDefault();
-    setFormState({
-      name: '',
-      email: '',
-      number: '',
-      checked: false
-    })
+      setFormState({
+        name: '',
+        email: '',
+        number: '',
+        checked: false
+      })
+      e.preventDefault();
     }
   };
 
@@ -62,7 +61,7 @@ export default function Form() {
         <div className={formStyle.two}>
           <form 
           name="contact"
-          method="post"
+          method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           className={formStyle.container} 

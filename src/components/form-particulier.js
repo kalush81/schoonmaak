@@ -2,21 +2,23 @@ import React, { useState } from "react"
 import fancyFormStyle from "./fancy-form-style.module.scss"
 import encode from "../helpers/encode"
 
+const initialFormState = {
+  name: "",
+  lastName: "",
+  companyName: "",
+  sector: "",
+  email: "",
+  phonenumber: "",
+  message: "",
+  gender: "Mevrouw",
+}
+
 export default function FormParticulier() {
-  const [formState, setFormState] = useState({
-    name: "",
-    lastName: "",
-    companyName: "",
-    sector: "",
-    email: "",
-    phonenumber: "",
-    message: "",
-    selectedGender: "Mevrouw",
-  })
+  const [formState, setFormState] = useState(initialFormState)
   const handleGenderChange = e => {
     setFormState({
       ...formState,
-      selectedGender: e.target.value,
+      gender: e.target.value,
     })
   }
   const handleInputChange = e => {
@@ -33,16 +35,17 @@ export default function FormParticulier() {
     })
       .then(() => {
         console.log("sent from fancy contact: ", formState)
-        alert("Success!")
+        alert("Successfuly sent!")
       })
       .catch(error => alert(error))
-    //e.preventDefault()
-    //console.log("you clicked submit button on particulier")
+    e.preventDefault()
+    setFormState(initialFormState)
+
   }
   return (
     <form
       name="fancy-contact"
-      method="post"
+      method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
@@ -51,18 +54,20 @@ export default function FormParticulier() {
         <div className={fancyFormStyle.formLeftPart}>
           <div className={fancyFormStyle.gender}>
             <input
+              name='gender'
               type="radio"
               value="Heer"
-              checked={formState.selectedGender === "Heer"}
+              checked={formState.gender === "Heer"}
               onChange={handleGenderChange}
             />
             <span> {"  "}</span>
             <label>Heer</label>
             <span> {"  "}</span>
             <input
+              name='gender'
               type="radio"
               value="Mevrouw"
-              checked={formState.selectedGender === "Mevrouw"}
+              checked={formState.gender === "Mevrouw"}
               onChange={handleGenderChange}
             />
             <span> {"  "}</span>
@@ -89,8 +94,7 @@ export default function FormParticulier() {
             name="companyName"
             placeholder="Bedrijf"
             onChange={handleInputChange}
-            value={formState.companyName}
-            
+            value={formState.companyName} 
           />
           <input
             type="text"
@@ -98,7 +102,6 @@ export default function FormParticulier() {
             placeholder="Sector"
             onChange={handleInputChange}
             value={formState.sector}
-            required
           />
         </div>
         <div className={fancyFormStyle.formRightPart}>
@@ -123,7 +126,7 @@ export default function FormParticulier() {
             required
           />
           <input
-            type="text"
+            type="number"
             name="phonenumber"
             placeholder="Telefoon"
             onChange={handleInputChange}
