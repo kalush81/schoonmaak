@@ -3,6 +3,7 @@ import fancyFormStyle from "./fancy-form-style.module.scss"
 import encode from "../helpers/encode"
 
 const initialFormState = {
+  as: 'private',
   name: "",
   lastName: "",
   companyName: "",
@@ -34,7 +35,7 @@ export default function FormParticulier() {
       body: encode({ "form-name": "fancy-contact", ...formState }),
     })
       .then(() => {
-        console.log("sent from fancy contact: ", formState)
+        console.log("sent from particulier: ", formState)
         alert("Successfuly sent!")
       })
       .catch(error => alert(error))

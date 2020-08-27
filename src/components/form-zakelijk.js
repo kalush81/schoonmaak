@@ -3,6 +3,7 @@ import fancyFormStyle from "./fancy-form-style.module.scss"
 import encode from "../helpers/encode"
 
 const initialFormState = {
+  as: 'company',
   name: "",
   lastName: "",
   companyName: "",
@@ -41,6 +42,7 @@ export default function FormZakelijk() {
       body: encode({ "form-name": "fancy-contact", ...formState }),
     })
       .then(() => {
+        console.log("sent from zakelijk: ", formState)
         alert("Successfuly sent!")
       })
       .catch(error => alert(error))
