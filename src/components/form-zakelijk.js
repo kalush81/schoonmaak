@@ -38,10 +38,9 @@ export default function FormZakelijk() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "fancy-contact-zakelijk", ...formState }),
+      body: encode({ "form-name": "fancy-contact", ...formState }),
     })
       .then(() => {
-        console.log("sent from fancy contact: ", formState)
         alert("Successfuly sent!")
       })
       .catch(error => alert(error))
@@ -51,7 +50,7 @@ export default function FormZakelijk() {
   }
   return (
     <form
-      name="fancy-contact-zakelijk"
+      name="fancy-contact"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
