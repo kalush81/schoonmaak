@@ -1,18 +1,23 @@
 import React, { useState } from "react"
 import formStyle from "./form.module.scss"
-
-const encode = (data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+import encode from "../helpers/encode"
 
 export default function Form() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
     number: "",
+    checked: false
   })
+
+  const handleRadioClick = e => {
+    console.log('radio event test: ', e.target.checked)
+    setFormState({
+      ...formState,
+      checked: true
+    })
+    
+  }
 
   const handleChange = e => {
     setFormState({
@@ -23,6 +28,9 @@ export default function Form() {
 
   
   const handleSubmit = e => {
+    //console.log({...formState})
+    if (formState.checked) {
+      console.log('form can be send', formState)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -31,12 +39,14 @@ export default function Form() {
       .then(() => alert("Success!"))
       .catch(error => alert(error));
 
-    e.preventDefault();
+    //e.preventDefault();
     setFormState({
       name: '',
       email: '',
-      number: ''
+      number: '',
+      checked: false
     })
+    }
   };
 
   return (
@@ -66,6 +76,7 @@ export default function Form() {
                 type="text"
                 onChange={handleChange}
                 value={formState.name}
+                required
               />
             </div>
             <div>
@@ -75,6 +86,7 @@ export default function Form() {
                 type="number"
                 onChange={handleChange}
                 value={formState.number}
+                required
               />
             </div>
             <div>
@@ -84,14 +96,15 @@ export default function Form() {
                 type="email"
                 onChange={handleChange}
                 value={formState.email}
+                required
               />
             </div>
-            <button type="submit">stuur bericht </button>
+            <button type="submit" disabled={!formState.checked}>stuur bericht </button>
           </form>
         </div>
 
         <div className={formStyle.three}>
-          <input type="radio" />
+          <input type="radio" onClick={handleRadioClick} required/>
           <span>&nbsp;&nbsp;</span>
           <p style={{ display: "inline" }}>
           <span>&nbsp;&nbsp;</span>

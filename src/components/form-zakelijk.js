@@ -2,16 +2,19 @@ import React from 'react'
 import fancyFormStyle from './fancy-form-style.module.scss'
 
 export default function FormZakelijk() {
+  const handleSubmit = e => {
+    console.log('you clicked submit button on zakelijk')
+  }
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <div className={fancyFormStyle.inputs}>
               <div className={fancyFormStyle.formLeftPart}>
                 <div className={fancyFormStyle.gender} >
-                  <input type="radio" />
+                  <input type="radio" value="Heer"/>
                   <span> {"  "}</span>
                   <label>Heer</label>
                   <span> {"  "}</span>
-                  <input type="radio" />
+                  <input type="radio" value="Mevrouw"/>
                   <span> {"  "}</span>
                   <label>Mevrouw</label>
                 </div>
@@ -46,7 +49,7 @@ export default function FormZakelijk() {
                 </div>
                 {/* <input type="text" placeholder="Enter Your Answer *" /> */}
                 <div className={fancyFormStyle.buttonDiv}>
-                  <button>Verzenden</button>
+                  <button type="submit">Verzenden</button>
                 </div>
               </div>
             </div>
