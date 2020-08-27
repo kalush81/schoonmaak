@@ -17,10 +17,10 @@ module.exports = {
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
-        custom: {
-          families: ["SegoeUI"],
-          urls: ["/fonts/fonts.scss"],
-        },
+        // custom: {
+        //   families: ["SegoeUI"],
+        //   urls: ["/fonts/fonts.scss"],
+        // },
         google: {
           families: ["Droid Sans", "Droid Serif"],
         },
