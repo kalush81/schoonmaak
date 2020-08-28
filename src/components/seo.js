@@ -45,7 +45,8 @@ export default function Seo({ description, lang = "nl", meta, title, rel }) {
       ].concat(meta)}
     >
       <link rel="canonical" href="https://www.schoonmaakloont.nl/sitemap.xml" />
-      {/* <link rel="canonical" href="https://www.schoonmaakloont.nl/ramenwassen" />
+      {/* <link rel="canonical" href="https://zen-swirles-6c209d.netlify.app/" />
+      <link rel="canonical" href="https://www.schoonmaakloont.nl/ramenwassen" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/zakelijk" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/overons" />
       <link rel="canonical" href="https://www.schoonmaakloont.nl/contact" />

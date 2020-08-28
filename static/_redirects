@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+https://zen-swirles-6c209d.netlify.app/* https://www.schoonmaakloont.nl/:splat 301!
+http://www.schoonmaakloont.nl/* https://www.schoonmaakloont.nl/:splat 301!
