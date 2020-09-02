@@ -4,15 +4,13 @@ import Header from "../components/header"
 import Article from "../components/article"
 import Section from "../components/section"
 import headerStyle from "../components/header.module.scss"
-import Seo from "../components/seo"
+import Seo2 from "../components/seo2"
 
 export default function Home() {
   return (
     <Layout>
-      <Seo
+      <Seo2
         title="schoonmaak loont schoonmaakbedrijf Tilburg" 
-        description="schoonmaak loont uw milieubewuste dienstverlener"
-        meta={{x: "something else specific to home page"}}
       />
       <Header page="home" title="Wij dragen bij aan het Milieu." />
       <figcaption className={headerStyle.figcap}>

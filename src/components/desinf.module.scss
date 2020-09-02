@@ -4,3 +4,51 @@
         list-style: disc;
     }
 }
+
+.certContainer {
+    display: flex;
+    justify-content: space-between;
+    .certImage {
+        width: 30%;
+        min-width: 300px;
+        box-shadow: -10px 10px 15px 0px rgba(0,0,0,0.25);
+        & img {
+            object-fit: cover;
+        }
+    }
+    .certDescription {
+        width: 65%; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1000px) {
+    .certContainer {
+        flex-direction: column;
+        .certImage {
+            min-width: 60%;
+            margin: auto;
+        }
+        .certDescription {
+            width: auto;
+        }
+    }   
+}
+@media (max-width: 660px) {
+    .certContainer {
+
+        .certImage {
+            min-width: 90%;
+            margin: auto;
+            object-fit: cover;
+        }
+        .certDescription {
+            height: 410px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}

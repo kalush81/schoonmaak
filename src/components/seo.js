@@ -1,5 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { StaticQuery, graphql } from "gatsby";
 
 export default function Seo({ description, lang = "nl", meta, title, rel }) {
   return (
@@ -34,6 +35,8 @@ export default function Seo({ description, lang = "nl", meta, title, rel }) {
             "Nederland",
             "schoonmaakbedrijf tilburg nederland",
             "ramen wassen", 
+            "ramen wasser",
+            "zakelijk",
             "glazen wassen",
             "particulier schoon"
           ],

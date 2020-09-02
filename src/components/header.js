@@ -80,7 +80,7 @@ export default function Header({ page, title }) {
   }
   return (
     <figure className="full-width-wrap nomargin">
-      <img src={require(`../../static/images/${page}.jpg`)} alt={page} />
+      <img alt={page+' schoonmaak'} title={page+' schoonmaak'} src={require(`../../static/images/${page}.jpg`)} />
       <figcaption className={headerStyle.figcap}>{title}</figcaption>
     </figure>
   )

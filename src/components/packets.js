@@ -1,15 +1,16 @@
 export const basis = [
   "- Stoffen van meubels, vensterbanken en apparaten",
-  "- Spiegels en ramen wassen",
   "- Het wassen van keukenwerkbladen",
   "- Wastafels, hulpstukken,",
-  "- Het wassen van sanitaire toiletten, - Baden en douches wassen",
+  "- Het wassen van sanitaire toiletten",
+  "- Baden en douches wassen",
   "- Veegwebben",
   "- Wasradiatoren, contacten",
   "- Het wassen van zeepcontainers",
   "- Waslampen",
   "- Voorzijden van kasten en plinten",
-  "- Het wassen van de verwarmingsplaat, - Het legen van de prullenbak",
+  "- Het wassen van de verwarmingsplaat",
+  "- Het legen van de prullenbak",
   "- Stofzuigen en reinigen van vloeren",
   "- Stofzuigen van banken, fauteuils",
   "- Het wassen van de schotel of het inbrengen van vuil in de vaatwasser.",
@@ -88,6 +89,14 @@ export const onze_kernwaardes = [
     title: 'Continuïteit',
     text: 'We handelen met het oog op de toekomst. We richten ons op langdurige relaties en zorgen voor duurzaam succes. We geven continu vorm aan transformatie.'
   }
+]
+  export const certificates = [
+    {
+      id: 1,  
+      title: 'Ozon',
+      text: 'ozongeneratoren en mogelijkheden van ozontoepassingen bij ontgeuring en desinfectiebehandelingen. Desinfectie van zorginstellingen, openbare gebouwen, appartementen en alle voertuigen die worden bedreigd met het Coronavirus.'
+    }
+  ]
   // 'BETROKKEN',
   // ['Wij trainen onze medewerkers niet alleen op schoonmaak maar ook om bij verschillende gebouwgebruikers in woorden en gedrag betrokkenheid uit te stralen. Onze betrokkenheid is een dienstverlening die als serviceverlening een ‘belevenis’ toevoegt.'],
   // 'TRANSPARANT',
@@ -96,5 +105,5 @@ export const onze_kernwaardes = [
   // ['Uw gebouw is onze verantwoordelijkheid en wij zoeken daarom het juiste personeel dat bij u past. Onze medewerkers worden voordat zij in dienst treden volledig gescreend. Dit doen wij om onze kwaliteit, betrouwbaarheid en veiligheid van opdrachtgevers en onszelf te behouden.'],
   // 'FLEXIBILITEIT',
   // ['Onopgemerkt nemen wij als regiepartner u zoveel mogelijk werk uit handen. Wij zullen u optimaal ontzorgen en u helpen de gestelde doelen te bereiken. Flexibiliteit wordt hierin uitermate gehanteerd.']
-]
+
 

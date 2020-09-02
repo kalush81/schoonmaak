@@ -40,6 +40,7 @@ export default function Article({ children, tekst, textSize, extras = null }) {
         </h3>
         <p style={{ marginBottom: "0" }}>{text[tekst]}</p>
         {children}
+        
       </div>
     </article>
   )
