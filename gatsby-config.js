@@ -99,20 +99,12 @@ module.exports = {
         plugins: [],
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images/`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `assets`,
-    //     path: `${__dirname}/src/assets/`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.schoonmaakloont.nl`,
+      },
+    },
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
