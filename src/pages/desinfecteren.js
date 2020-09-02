@@ -6,12 +6,18 @@ import Pakkets from "../components/pakkets"
 import { certificates } from "../components/packets"
 import desinfStyles from "../components/desinf.module.scss"
 import certImg from "../../static/images/certificates/Ozon-Certificaat-Virus-Desinfectie-Corona.jpg"
+import Seo2 from "../components/seo2"
+
 //import cert from '../images/'
 
 export default function Desinfecteren() {
   console.log("certificate title: ", certificates[0].title)
   return (
     <Layout>
+      <Seo2
+        title="Schoonmaak Loont schoonmaakbedrijf Tilburg Coronavirusvrij met Ozon"
+        description="Ozon binnenshuis en op kantoor is een effectieve en bewezen methode voor het verwijderen van ziektekiemen, bacteriën en allergenen en virussen. Het verbetert het gebruiksgemak van kantoorpanden, maar elimineert vooral pathogene ziektekiemen."
+      />
       <Header
         page="desinfecteren"
         title="Virusvrij thuis en op kantoor met Ozon."
@@ -35,13 +41,15 @@ export default function Desinfecteren() {
               </div>
               <div className={desinfStyles.certDescription}>
                 <h3>GECERTIFICEERD VOOR</h3>
-                
-                <blockquote>"<strong> Ozon</strong>, ozongeneratoren en mogelijkheden van
+
+                <blockquote>
+                  "<strong> Ozon</strong>, ozongeneratoren en mogelijkheden van
                   ozontoepassingen bij ontgeuring en desinfectiebehandelingen.
                   Desinfectie van zorginstellingen, openbare gebouwen,
                   appartementen en alle voertuigen die worden bedreigd met het
-                  Coronavirus. "</blockquote>
-                
+                  Coronavirus. "
+                </blockquote>
+
                 <p>Schoonmaak Loont v.o.f.</p>
               </div>
             </div>

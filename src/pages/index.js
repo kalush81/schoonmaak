@@ -10,7 +10,8 @@ export default function Home() {
   return (
     <Layout>
       <Seo2
-        title="schoonmaak loont schoonmaakbedrijf Tilburg" 
+        title="Schoonmaak Loont schoonmaakbedrijf Tilburg innovatief en milieubewust" 
+        //description="U zoekt een bedrijf dat mileubewust is op zijn dienstverlening. Dat net als u bewust is op het realiseren van uw doelstellingen. Dat klantgericht werkt aan goed schoon op een betere manier"
       />
       <Header page="home" title="Wij dragen bij aan het Milieu." />
       <figcaption className={headerStyle.figcap}>

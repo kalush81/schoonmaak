@@ -133,7 +133,7 @@ export const overons = {
       ],
     },
     {
-      title: "ONS MISSIE",
+      title: "Ons missie",
       paragraphs: [
         {
           id: 1,
@@ -143,7 +143,7 @@ export const overons = {
       ],
     },
     {
-      title: "ONS VISIE",
+      title: "Ons visie",
       paragraphs: [
         {
           id: 1,
@@ -157,38 +157,38 @@ export const overons = {
       paragraphs: [
         {
           id: 1,
-          title: "BETROKKEN",
+          title: "Betroken",
           text:
             "Wij trainen onze medewerkers niet alleen op schoonmaak maar ook om bij verschillende gebouwgebruikers in woorden en gedrag betrokkenheid uit te stralen. Onze betrokkenheid is een dienstverlening die als serviceverlening een ‘belevenis’ toevoegt.",
         },
         {
           id: 2,
-          title: "TRANSPARANT",
+          title: "Transparant",
           text:
             "Wij hebben een open en transparante werkwijze. Wij doen wat we met u hebben afgesproken en maken dit volledig voor u inzichtelijk.",
         },
         {
           id: 3,
-          title: "BETROUWBAAR",
+          title: "Betrouwbaar",
           text:
             "Uw gebouw is onze verantwoordelijkheid en wij zoeken daarom het juiste personeel dat bij u past. Onze medewerkers worden voordat zij in dienst treden volledig gescreend. Dit doen wij om onze kwaliteit, betrouwbaarheid en veiligheid van opdrachtgevers en onszelf te behouden.",
         },
         {
           id: 4,
-          title: "FLEXIBILITEIT",
+          title: "Flexibiliteit",
           text:
             "Onopgemerkt nemen wij als regiepartner u zoveel mogelijk werk uit handen. Wij zullen u optimaal ontzorgen en u helpen de gestelde doelen te bereiken. Flexibiliteit wordt hierin uitermate gehanteerd.",
         },
         {
           id: 5,
-          title: "CONTINUÏTEIT",
+          title: "Continuïteit",
           text:
             "We handelen met het oog op de toekomst. We richten ons op langdurige relaties en zorgen voor duurzaam succes. We geven continu vorm aan transformatie.",
         },
       ],
     },
     {
-      title: "ONZE SECTOREN",
+      title: "Onze sectoren",
       paragraphs: [
         {
           id: 1,
