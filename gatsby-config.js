@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    author: "Michael Van Loon vs Kalush",
+    author: "Michael Van Loon",
     description:
       "Schoonmaak Loont focust op kwaliteit en zorgt ervoor dat geniet u van een schoon en representatief resultaat, zonder dat u ergens omkijken naar heeft.",
     siteUrl: `https://www.schoonmaakloont.nl/`,
@@ -57,7 +57,19 @@ module.exports = {
       "Gezondheid",
       "gecertificeerd",
       "Woning",
-      "Ramen", "Wassen", "Schoonmaak", "Schoonmaker", "Glazen", "Ramen lappen", "Ramen zemen", "Wasser", "Cleaning", "Diestverlening", "Thuis", "Kantoor", "Appartementen",
+      "Ramen",
+      "Wassen",
+      "Schoonmaak",
+      "Schoonmaker",
+      "Glazen",
+      "Ramen lappen",
+      "Ramen zemen",
+      "Wasser",
+      "Cleaning",
+      "Diestverlening",
+      "Thuis",
+      "Kantoor",
+      "Appartementen",
     ],
   },
   plugins: [

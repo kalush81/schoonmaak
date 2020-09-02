@@ -37,7 +37,7 @@ export default function Header({ page, title }) {
       >
         <div
           title="Milieu_Vriendelijk_Schoonmaak"
-          data-src={require("../../static/images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
+          data-src={require("../images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
         >
           <div data-type="caption">
             <h2 style={style.header}>ONS MISSIE</h2>
@@ -50,7 +50,7 @@ export default function Header({ page, title }) {
         </div>
         <div
           title="Corona_Virus_Schoonmaak"
-          data-src={require("../../static/images/slider-pics/Corona_Virus_Schoonmaak.jpg")}
+          data-src={require("../images/slider-pics/Corona_Virus_Schoonmaak.jpg")}
         >
           <div data-type="caption">
             <h2 style={style.header}>INNOVATIEF DESINFECTEREN</h2>
@@ -62,7 +62,7 @@ export default function Header({ page, title }) {
         </div>
         <div
           title="Duurzaamheid_Schoonmaak"
-          data-src={require("../../static/images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
+          data-src={require("../images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
         >
           <div data-type="caption">
             {/* <div className="container"> */}
@@ -80,7 +80,7 @@ export default function Header({ page, title }) {
   }
   return (
     <figure className="full-width-wrap nomargin">
-      <img alt={page+' schoonmaak'} title={page+' schoonmaak'} src={require(`../../static/images/${page}.jpg`)} />
+      <img alt={page+' schoonmaak'} title={page+' schoonmaak'} src={require(`../images/${page}.jpg`)} />
       <figcaption className={headerStyle.figcap}>{title}</figcaption>
     </figure>
   )

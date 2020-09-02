@@ -1,14 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import footerStyle from "./footer.module.scss"
-import navStyle from "./nav.module.scss"
 import Icon from "../assets/asset3.svg"
-//import { FaBeer } from "react-icons/fa"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faDownload } from "@fortawesome/free-solid-svg-icons"
-import fb from "../../static/images/social-icons/fb.png"
-import linkedin from "../../static/images/social-icons/linkedin.png"
-import whatsapp from "../../static/images/social-icons/whatsapp.png"
+import fb from "../images/social-icons/fb.png"
+import linkedin from "../images/social-icons/linkedin.png"
+import whatsapp from "../images/social-icons/whatsapp.png"
 
 export default function Footer() {
   const links = [

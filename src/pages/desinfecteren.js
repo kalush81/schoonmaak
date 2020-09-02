@@ -5,7 +5,7 @@ import Article from "../components/article"
 import Pakkets from "../components/pakkets"
 import { certificates } from "../components/packets"
 import desinfStyles from "../components/desinf.module.scss"
-import certImg from "../../static/images/certificates/Ozon-Certificaat-Virus-Desinfectie-Corona.jpg"
+import certImg from "../images/certificates/Ozon-Certificaat-Virus-Desinfectie-Corona.jpg"
 import Seo2 from "../components/seo2"
 
 //import cert from '../images/'
