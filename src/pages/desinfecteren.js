@@ -63,7 +63,7 @@ export default function Desinfecteren() {
             specialisten toe te vertrouwen. Ozon wordt aanbevolen voor
             ontsmetting van lokalen na quarantaine.
           </p>
-          <h3>Ozon - een effective ontsmettingsmethode</h3>
+          <h3>Ozon - een effectieve ontsmettingsmethode</h3>
           <p>
             Ozon is een gas dat de kleinste hoekjes en gaten van kantoren,
             bijkeukens, industriële hallen kan binnendringen. Het heeft een
@@ -83,7 +83,7 @@ export default function Desinfecteren() {
             (tijdens elektrische ontladingen, ozon wordt gevormd).
           </p>
           <h3>
-            Zorg voor de gezondheid van uw medewerkers, klanetn en gelievden!
+            Zorg voor de gezondheid van uw medewerkers, klanten en geliefden!
           </h3>
           <ul>
             <li>
@@ -98,7 +98,7 @@ export default function Desinfecteren() {
             </li>
             <li>100% ecologische methode</li>
           </ul>
-          <h3>Ozon in de kamer | voor vie?</h3>
+          <h3>Ozon in de kamer | voor wie?</h3>
           <p>
             Ozon is een volkomen veilige ontsmettingsmiddelmethode die goed
             werkt in:
@@ -116,7 +116,7 @@ export default function Desinfecteren() {
           </ul>
           <h3>Ozoning kamers – prijs</h3>
           <p>
-            Onze ocsonatie prijs hangt af van het volume van de kamer en de tijd
+            Onze ozonisatie prijs hangt af van het volume van de kamer en de tijd
             die moet worden besteed aan ozon. Wilt u meer weten over
             kantoorruimte, neem dan contact met ons op via 0629262799 of e-mail:
           </p>

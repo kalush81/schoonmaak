@@ -1,19 +1,12 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
 
 module.exports = {
-  /* Your site config here */
   siteMetadata: {
     author: "Michael Van Loon",
     description:
       "Schoonmaak Loont focust op kwaliteit en zorgt ervoor dat geniet u van een schoon en representatief resultaat, zonder dat u ergens omkijken naar heeft.",
     siteUrl: `https://www.schoonmaakloont.nl/`,
-    keywords: [
-      "Mileubewust",
-      "Dienstverlening",
+    keywords: [...new Set([
+      "Milieubewuste",
       "Schoonmaak",
       "Ramen wassen",
       "Kantoor",
@@ -31,7 +24,6 @@ module.exports = {
       "Flats",
       "Renovatie",
       "Reinigen",
-      "Ramen wassen",
       "Cleaning",
       "Klantvriendelijk",
       "meubels",
@@ -66,11 +58,11 @@ module.exports = {
       "Ramen zemen",
       "Wasser",
       "Cleaning",
-      "Diestverlening",
+      "Dienstverlening",
       "Thuis",
       "Kantoor",
       "Appartementen",
-    ],
+    ])],
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -87,15 +79,10 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        // CommonMark mode (default: true)
         commonmark: true,
-        // Footnotes mode (default: true)
         footnotes: true,
-        // Pedantic mode (default: true)
         pedantic: true,
-        // GitHub Flavored Markdown mode (default: true)
         gfm: true,
-        // Plugins configs
         plugins: [],
       },
     },
@@ -121,7 +108,7 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/, // See below to configure properly
+          include: /assets/, // not sure if configed corectly
         },
       },
     },

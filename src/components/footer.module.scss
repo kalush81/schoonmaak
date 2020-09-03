@@ -89,6 +89,10 @@ address {
   width: 30px;
   height: 30px;
   margin: 5px;
+  //border: 2px solid salmon;
+  filter: drop-shadow(-3px -3px 2px rgba(122, 122, 122, 0.3))
+  drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2))
+  drop-shadow(15px 15px 15px rgba(0, 0, 0, 0.3));
 }
 @media (max-width: 500px) {
   .container {
