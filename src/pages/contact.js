@@ -30,9 +30,6 @@ export default function Contact() {
             </header>
             <Article extras={data.allContactJson.edges}/>
             <MyFancyForm />
-            {/* <div className='full-width-container bar'>
-
-            </div> */}
         </Layout>
     )
 }

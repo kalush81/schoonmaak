@@ -1,15 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import Article from "../components/article"
-
-//import { disclaimer } from "../texts/text"
-
 import { graphql, useStaticQuery } from "gatsby"
-
 import disclaimerStyle from "../components/header.module.scss"
 
 export default function Disclaimer() {
-  //console.log("disclaimer: ", disclaimer)
   const data = useStaticQuery(graphql`
     query {
       allDisclaimerJson {
