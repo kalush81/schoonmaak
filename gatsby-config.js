@@ -69,11 +69,12 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `articles`,
-        path: `${__dirname}/src/components/articles`,
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     {
