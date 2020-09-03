@@ -5,24 +5,24 @@ import { onze_kernwaardes } from "../components/packets"
 
 export default function Article({ children, tekst, textSize, extras = null }) {
   if (extras) {
-    const { articles } = extras
+    const articles = extras;
     return (
       <article className="text">
         <div className="container">
           {articles.map(article => {
-            return article.title !== "ONZE KERNWAARDES" ? (
-              <ul key={article.title}>
-                <h3>{article.title}</h3>
-                {article.paragraphs.map(paragraph => {
+            return article.node.title !== "ONZE KERNWAARDES" ? (
+              <ul key={article.node.id}>
+                <h3>{article.node.title}</h3>
+                {article.node.paragraphs.map(paragraph => {
                   return <li key={paragraph.id}>{paragraph.text}</li>
                 })}
               </ul>
             ) : (
-              <ul>
+              <ul key={article.node.id}> 
                 <Pakket 
                   style='100%'
                   packets={onze_kernwaardes}
-                  packetsName={article.title}
+                  packetsName={article.node.title}
                 />
               </ul>
             )

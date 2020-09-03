@@ -16,7 +16,6 @@ export default function Form() {
       ...formState,
       checked: true
     })
-    
   }
 
   const handleChange = e => {

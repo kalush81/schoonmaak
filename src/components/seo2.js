@@ -106,11 +106,7 @@ SEO2.defaultProps = {
 
 SEO2.propTypes = {
   description: PropTypes.string,
-  image: PropTypes.shape({
-    //src: PropTypes.string.isRequired(),
-    //height: PropTypes.string.isRequired(),
-    //width: PropTypes.string.isRequired(),
-  }),
+  image: PropTypes.shape({}),
   meta: PropTypes.array,
   title: PropTypes.string.isRequired,
 }

@@ -2,9 +2,6 @@ import React, { useState } from "react"
 import packetsStyle from "./packets.module.scss"
 
 export default function Pakkets({ children, packets, packetsName, style }) {
-  //console.log("packets:", packets)
-  //console.log("packet name:", packetsName)
-
   const [isOpen, setOpen] = useState(false)
   const subItem = packets => {
     return (
@@ -30,15 +27,16 @@ export default function Pakkets({ children, packets, packetsName, style }) {
           </h3>
           {isOpen ? (
             <ul className={`${packetsStyle.list} ${packetsStyle.listKern}`}>
-              {packets ? packets.map(packet => {
-                return (
-                  <li key={packet.id} >
-                    
-                      <h3 style={{ marginBottom: 10 }}>{packet.title}</h3>
-                      <p>{packet.text}</p>
-                  </li>
-                ) 
-              }) : children }
+              {packets
+                ? packets.map(packet => {
+                    return (
+                      <li key={packet.id}>
+                        <h3 style={{ marginBottom: 10 }}>{packet.title}</h3>
+                        <p>{packet.text}</p>
+                      </li>
+                    )
+                  })
+                : children}
             </ul>
           ) : null}
         </div>
@@ -59,9 +57,8 @@ export default function Pakkets({ children, packets, packetsName, style }) {
           <ul className={packetsStyle.list}>
             {packets.map(packet => {
               return (
-                <li className={packetsStyle.listItem}>
+                <li key={packet} className={packetsStyle.listItem}>
                   {!Array.isArray(packet) ? packet : subItem(packet)}
-                  
                 </li>
               )
             })}

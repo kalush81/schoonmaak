@@ -21,21 +21,12 @@ export default function MyFancyForm() {
   return (
     <div className="fancy-form-container">
       <div className="container">
-        
         <div className={fancyFormStyle.fancyFormContainer}>
-
-          <div className={fancyFormStyle.logoPanel} style={{display: 'none'}}>
-            {/* <div className={fancyFormStyle.logo}>
-            <Icon className={fancyFormStyle.icon} />
-          </div> */}
-            <div className={fancyFormStyle.descr}>
-              {/* <h2>Welcome</h2>
-            <p>we'd love to hear from you!</p> */}
-            </div>
+          <div className={fancyFormStyle.logoPanel} style={{ display: "none" }}>
+            <div className={fancyFormStyle.descr}></div>
           </div>
 
           <div className={fancyFormStyle.formWraper}>
-
             <div className={fancyFormStyle.switch}>
               <div className={fancyFormStyle.btnWrap}>
                 <button onClick={() => toggleActiveForm(!activeForm)}>
@@ -54,7 +45,6 @@ export default function MyFancyForm() {
             </h2>
 
             {activeForm ? <FormParticulier /> : <FormZakelijk />}
-
           </div>
         </div>
       </div>

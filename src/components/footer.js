@@ -32,18 +32,15 @@ export default function Footer() {
               style={{ margin: "0 auto" }}
             >
               <Link to="/">
-                <img src={fb} className={footerStyle.socialBtn} />
+                <img src={fb} alt="facebook icon" className={footerStyle.socialBtn} />
               </Link>
 
               <Link to="/">
-                <img src={linkedin} className={footerStyle.socialBtn} />
+                <img src={linkedin} alt="linkedin icon" className={footerStyle.socialBtn} />
               </Link>
               <Link to="/">
-                <img src={whatsapp} className={footerStyle.socialBtn} />
+                <img src={whatsapp} alt='whatsapp icon' className={footerStyle.socialBtn} />
               </Link>
-
-              {/*<In />
-              <Wa /> */}
             </div>
           </div>
           <div className={footerStyle.contactBlock}>

@@ -2,10 +2,27 @@ import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import Article from "../components/article"
-import { ramenwassen } from "../texts/text"
+//import { ramenwassen } from "../texts/text"
+import { graphql, useStaticQuery } from "gatsby"
 import Seo2 from "../components/seo2"
 
 export default function Ramenwassen() {
+  const data = useStaticQuery(graphql`
+    query {
+      allRamenwassenJson {
+        edges {
+          node {
+            id
+            title
+            paragraphs {
+              text
+              id
+            }
+          }
+        }
+      }
+    }
+  `)
   return (
     <Layout>
       <Seo2
@@ -16,7 +33,7 @@ export default function Ramenwassen() {
       <Header page="ramenwassen" title="Ook gespecialiseerd in ramenwassen." />
       {/* <Article tekst='raam pakket' textSize='uppercase'/>
             <Article tekst=" "/> */}
-      <Article extras={{ ...ramenwassen }} />
+      <Article extras={data.allRamenwassenJson.edges} />
     </Layout>
   )
 }

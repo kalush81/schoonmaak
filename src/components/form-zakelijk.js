@@ -179,7 +179,6 @@ export default function FormZakelijk() {
               onChange={handleInputChange}
             />
           </div>
-          {/* <input type="text" placeholder="Enter Your Answer *" /> */}
           <div className={fancyFormStyle.buttonDiv}>
             <button type="submit">Verzenden</button>
           </div>

@@ -11,7 +11,6 @@ import Seo2 from "../components/seo2"
 //import cert from '../images/'
 
 export default function Desinfecteren() {
-  console.log("certificate title: ", certificates[0].title)
   return (
     <Layout>
       <Seo2
@@ -37,7 +36,7 @@ export default function Desinfecteren() {
           >
             <div className={desinfStyles.certContainer}>
               <div className={desinfStyles.certImage}>
-                <img src={certImg} />
+                <img src={certImg} alt='certifacate issued by the Entomological Consulting'/>
               </div>
               <div className={desinfStyles.certDescription}>
                 <h3>GECERTIFICEERD VOOR</h3>

@@ -16,13 +16,10 @@ const style = {
     fontWeight: "bold",
     textTransform: 'uppercase',
     fontSize: 'big'
-    //padding: "10px 20px",
-    //marginBottom: 0,
   },
   para: {
     padding: "20px 20px",
     marginBottom: 0,
-    //background: 'rgba(255,255,255, 0.6)'
   },
 }
 
@@ -37,6 +34,7 @@ export default function Header({ page, title }) {
       >
         <div
           title="Milieu_Vriendelijk_Schoonmaak"
+          alt='a'
           data-src={require("../images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
         >
           <div data-type="caption">
@@ -50,6 +48,7 @@ export default function Header({ page, title }) {
         </div>
         <div
           title="Corona_Virus_Schoonmaak"
+          alt='b'
           data-src={require("../images/slider-pics/Corona_Virus_Schoonmaak.jpg")}
         >
           <div data-type="caption">
@@ -62,17 +61,16 @@ export default function Header({ page, title }) {
         </div>
         <div
           title="Duurzaamheid_Schoonmaak"
+          alt="c"
           data-src={require("../images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
         >
           <div data-type="caption">
-            {/* <div className="container"> */}
               <h2 style={style.header}>ons visie</h2>
               <p>
                 Bij ons werk vormt duurzaamheid een belangrijke pijler. We
                 hebben oog voor het milieu en gaan voor een samenwerking op de
                 lange termijn.
               </p>
-            {/* </div> */}
           </div>
         </div>
       </AutoplaySlider>

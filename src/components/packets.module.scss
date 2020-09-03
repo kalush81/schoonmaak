@@ -3,48 +3,40 @@ $colorY: #52ae32;
 $bg-light-color: #f8f9fa;
 
 .header {
-    background: linear-gradient(0.25turn, lighten($colorX, 0), lighten($colorY, 0));
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    cursor: pointer;
+  background: linear-gradient(
+    0.25turn,
+    lighten($colorX, 0),
+    lighten($colorY, 0)
+  );
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  cursor: pointer;
 }
 .list {
-    color: black;
-    margin-left: 0;
-    background-color: rgba(107, 174, 51, 0.1);
+  color: black;
+  margin-left: 0;
+  background-color: rgba(107, 174, 51, 0.1);
 }
 .listItem {
-    //background-color: lighten(grey, 40);
-    margin: 0;
-    //margin-left: 10px;
-    
-    padding: 5px;
-    padding-left: 35px;
-    list-style: none;
-    //text-transform: capitalize;
-    li {
-        list-style: disc;
-        //font-weight: 700;
-    }
-    // &:nth-child(odd) {
-    //     font-weight: 700;
-    //     //margin: 0 initial;
-    //     //padding: 0;
-    //     margin-bottom: 0;
-    //     padding-bottom: 0;
-    // }
+  margin: 0;
+
+  padding: 5px;
+  padding-left: 35px;
+  list-style: none;
+  li {
+    list-style: disc;
+  }
 }
 
 .listKern {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 .container {
-    color: white;
-    //text-transform: uppercase;
-    margin-bottom: 20px;
-    h3 {
-        text-transform: uppercase;
-        margin-bottom: 0;
-    }
+  color: white;
+  margin-bottom: 20px;
+  h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
 }

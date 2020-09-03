@@ -34,11 +34,6 @@ export default function BootstrapNav() {
         <Navbar.Collapse id="navbarResponsive" className="nav-column">
           <div className="ml-auto upperNav">
             <Nav as="ul">
-            {/* <Nav.Item as="li">
-                <Link to="/fancy-form" activeClassName={navStyle.active}>
-                  fancy form
-                </Link>
-              </Nav.Item> */}
               <Nav.Item as="li">
                 <Link to="/overons" activeClassName={navStyle.active}>
                   Over ons

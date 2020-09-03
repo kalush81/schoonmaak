@@ -12,7 +12,6 @@ export default function Particulier() {
       <Seo2
         title="Schoonmaak Loont schoonmaakbedrijf Tilburg ook voor thuis"
         description="De privéruimte van ons appartement en huis is een delicate sfeer, als professionals met ervaring begrijpen we heel goed dat het, naast een perfecte schoonmaak, ook belangrijk is dat mensen die deze activiteit uitvoeren zich aanpassen aan het dagelijkse ritme de harmonie van stilte in huis niet verstoren"
-        meta={["particulier wassen", "particulier schoonmaak"]}
       />
       <Header
         page="particulier"
