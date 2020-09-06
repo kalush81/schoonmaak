@@ -1,10 +1,12 @@
 import React from "react"
 import headerStyle from "./header.module.scss"
+
 import withAutoplay from "react-awesome-slider/dist/autoplay"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
 import "react-awesome-slider/dist/captioned.css"
 import sliderStyles from "./slider.module.scss"
+
 
 const style = {
   container: {
@@ -24,8 +26,10 @@ const style = {
 }
 
 const AutoplaySlider = withAutoplay(AwesomeSlider)
-export default function Header({ page, title }) {
+
+export default function Header({ page, title, processedImage }) {
   if (page === "home") {
+    console.log('processedImage: ', processedImage)
     return (
       <AutoplaySlider
         play={true}
@@ -33,9 +37,10 @@ export default function Header({ page, title }) {
         className={sliderStyles.container}
       >
         <div
-          title="Milieu_Vriendelijk_Schoonmaak"
-          alt='a'
-          data-src={require("../images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
+          title="Milieu Vriendelijk Schoonmaak"
+          alt='Vriendelijk Schoonmaak Bedrijf'
+          //data-src={require("../images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
+          data-src={processedImage[0].props.fluid.src}
         >
           <div data-type="caption">
             <h2 style={style.header}>ONS MISSIE</h2>
@@ -47,9 +52,9 @@ export default function Header({ page, title }) {
           </div>
         </div>
         <div
-          title="Corona_Virus_Schoonmaak"
-          alt='b'
-          data-src={require("../images/slider-pics/Corona_Virus_Schoonmaak.jpg")}
+          title="Corona Virus Schoonmaak"
+          alt='Corona Virus'
+          data-src={processedImage[1].props.fluid.src}
         >
           <div data-type="caption">
             <h2 style={style.header}>INNOVATIEF DESINFECTEREN</h2>
@@ -60,9 +65,9 @@ export default function Header({ page, title }) {
           </div>
         </div>
         <div
-          title="Duurzaamheid_Schoonmaak"
-          alt="c"
-          data-src={require("../images/slider-pics/Duurzaamheid_Schoonmaak.jpg")}
+          title="Duurzaamheid Schoonmaak"
+          alt="Duurzaamheid Schoonmaak"
+          data-src={processedImage[2].props.fluid.src}
         >
           <div data-type="caption">
               <h2 style={style.header}>ons visie</h2>
@@ -78,8 +83,11 @@ export default function Header({ page, title }) {
   }
   return (
     <figure className="full-width-wrap nomargin">
-      <img alt={page+' schoonmaak'} title={page+' schoonmaak'} src={require(`../images/${page}.jpg`)} />
+      {/* <img alt={page+' schoonmaak'} title={page+' schoonmaak'} src={require(`../images/${page}.jpg`)} /> */}
+      {/* <Img fixed={data.imageOne.childImageSharp.fixed}/> */}
+      {processedImage}
       <figcaption className={headerStyle.figcap}>{title}</figcaption>
     </figure>
   )
 }
+

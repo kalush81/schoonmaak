@@ -3,10 +3,14 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Article from "../components/article"
 import Pakkets from "../components/pakkets"
+
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+
 import { basis, premium, renovatie } from "../components/packets"
 import Seo2 from "../components/seo2"
 
-export default function Particulier() {
+export default function Particulier(props) {
   return (
     <Layout>
       <Seo2
@@ -16,6 +20,13 @@ export default function Particulier() {
       <Header
         page="particulier"
         title="Ook bij U thuis maken wij met plezier schoon."
+        processedImage={
+          <Img
+            fluid={props.data.imageOne.childImageSharp.fluid}
+            alt="schoonmaak voor thuis"
+            title="Schoonmaak Loont schoonmaakbedrijf Tilburg ook voor thuis"
+          />
+        }
       />
       <div className="article-text-container">
         <Article tekst="particulier" textSize="uppercase" />
@@ -29,3 +40,20 @@ export default function Particulier() {
     </Layout>
   )
 }
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "images/particulier.jpg" }) {
+      ...fluidImage
+    }
+  }
+`

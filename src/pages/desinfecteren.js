@@ -3,12 +3,16 @@ import Layout from "../components/layout"
 import Header from "../components/header"
 import Article from "../components/article"
 import Pakkets from "../components/pakkets"
+
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
+
 import { certificates } from "../components/packets"
 import desinfStyles from "../components/desinf.module.scss"
 import certImg from "../images/certificates/Ozon-Certificaat-Virus-Desinfectie-Corona.jpg"
 import Seo2 from "../components/seo2"
 
-export default function Desinfecteren() {
+export default function Desinfecteren(props) {
   return (
     <Layout>
       <Seo2
@@ -18,6 +22,13 @@ export default function Desinfecteren() {
       <Header
         page="desinfecteren"
         title="Virusvrij thuis en op kantoor met Ozon."
+        processedImage={
+          <Img
+            fluid={props.data.imageOne.childImageSharp.fluid}
+            alt="corona virus"
+            title="Schoonmaak Loont schoonmaakbedrijf in Tilburg Coronavirusvrij met Ozon"
+          />
+        }
       />
       <Article>
         <div className={desinfStyles.list}>
@@ -34,7 +45,10 @@ export default function Desinfecteren() {
           >
             <div className={desinfStyles.certContainer}>
               <div className={desinfStyles.certImage}>
-                <img src={certImg} alt='certifacate issued by the Entomological Consulting'/>
+                <img
+                  src={certImg}
+                  alt="certifacate issued by the Entomological Consulting"
+                />
               </div>
               <div className={desinfStyles.certDescription}>
                 <h3>GECERTIFICEERD VOOR</h3>
@@ -113,8 +127,8 @@ export default function Desinfecteren() {
           </ul>
           <h3>Ozoning kamers – prijs</h3>
           <p>
-            Onze ozonisatie prijs hangt af van het volume van de kamer en de tijd
-            die moet worden besteed aan ozon. Wilt u meer weten over
+            Onze ozonisatie prijs hangt af van het volume van de kamer en de
+            tijd die moet worden besteed aan ozon. Wilt u meer weten over
             kantoorruimte, neem dan contact met ons op via 0629262799 of e-mail:
           </p>
           <a href="mailto:hallo@schoonmaakloont.nl">hallo@schoonmaakloont.nl</a>
@@ -123,3 +137,20 @@ export default function Desinfecteren() {
     </Layout>
   )
 }
+
+export const fluidImage = graphql`
+  fragment fluidImage on File {
+    childImageSharp {
+      fluid(maxWidth: 1000) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+export const pageQuery = graphql`
+  query {
+    imageOne: file(relativePath: { eq: "images/desinfecteren.jpg" }) {
+      ...fluidImage
+    }
+  }
+`
