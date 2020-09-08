@@ -7,7 +7,6 @@ import "react-awesome-slider/dist/styles.css"
 import "react-awesome-slider/dist/captioned.css"
 import sliderStyles from "./slider.module.scss"
 
-
 const style = {
   container: {
     border: "10px solid black",
@@ -16,8 +15,8 @@ const style = {
 
   header: {
     fontWeight: "bold",
-    textTransform: 'uppercase',
-    fontSize: 'big'
+    textTransform: "uppercase",
+    fontSize: "big",
   },
   para: {
     padding: "20px 20px",
@@ -29,7 +28,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider)
 
 export default function Header({ page, title, processedImage }) {
   if (page === "home") {
-    console.log('processedImage: ', processedImage)
+    console.log("processedImage: ", processedImage)
     return (
       <AutoplaySlider
         play={true}
@@ -38,7 +37,7 @@ export default function Header({ page, title, processedImage }) {
       >
         <div
           title="Milieu Vriendelijk Schoonmaak"
-          alt='Vriendelijk Schoonmaak Bedrijf'
+          alt="Vriendelijk Schoonmaak Bedrijf"
           //data-src={require("../images/slider-pics/Milieu_Vriendelijk_Schoonmaak.jpg")}
           data-src={processedImage[0].props.fluid.src}
         >
@@ -53,7 +52,7 @@ export default function Header({ page, title, processedImage }) {
         </div>
         <div
           title="Corona Virus Schoonmaak"
-          alt='Corona Virus'
+          alt="Corona Virus"
           data-src={processedImage[1].props.fluid.src}
         >
           <div data-type="caption">
@@ -70,12 +69,12 @@ export default function Header({ page, title, processedImage }) {
           data-src={processedImage[2].props.fluid.src}
         >
           <div data-type="caption">
-              <h2 style={style.header}>ons visie</h2>
-              <p>
-                Bij ons werk vormt duurzaamheid een belangrijke pijler. We
-                hebben oog voor het milieu en gaan voor een samenwerking op de
-                lange termijn.
-              </p>
+            <h2 style={style.header}>ons visie</h2>
+            <p>
+              Bij ons werk vormt duurzaamheid een belangrijke pijler. We hebben
+              oog voor het milieu en gaan voor een samenwerking op de lange
+              termijn.
+            </p>
           </div>
         </div>
       </AutoplaySlider>
@@ -85,9 +84,8 @@ export default function Header({ page, title, processedImage }) {
     <figure className="full-width-wrap nomargin">
       {/* <img alt={page+' schoonmaak'} title={page+' schoonmaak'} src={require(`../images/${page}.jpg`)} /> */}
       {/* <Img fixed={data.imageOne.childImageSharp.fixed}/> */}
-      {processedImage}
+      <div style={{width: '100%'}}>{processedImage}</div>
       <figcaption className={headerStyle.figcap}>{title}</figcaption>
     </figure>
   )
 }
-

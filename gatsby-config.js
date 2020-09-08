@@ -1,7 +1,7 @@
 
 module.exports = {
   siteMetadata: {
-    author: "Michael Van Loon",
+    author: "krzysiek.kaluza@gmail.com",
     description:
       "Schoonmaak Loont focust op kwaliteit en zorgt ervoor dat geniet u van een schoon en representatief resultaat, zonder dat u ergens omkijken naar heeft.",
     siteUrl: `https://www.schoonmaakloont.nl/`,
