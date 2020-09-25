@@ -31,14 +31,14 @@ export default function Footer() {
               className={footerStyle.socialSvgBtns}
               style={{ margin: "0 auto" }}
             >
-              <Link to="/">
+              <Link to="https://www.facebook.com/schoonmaakloont">
                 <img src={fb} alt="facebook icon" className={footerStyle.socialBtn} />
               </Link>
 
-              <Link to="/">
+              <Link to="https://www.linkedin.com/in/schoonmaak-loont-a1a8bb1b5/">
                 <img src={linkedin} alt="linkedin icon" className={footerStyle.socialBtn} />
               </Link>
-              <Link to="/">
+              <Link to="https://api.whatsapp.com/send?phone=0031629262799">
                 <img src={whatsapp} alt='whatsapp icon' className={footerStyle.socialBtn} />
               </Link>
             </div>
@@ -93,10 +93,10 @@ export default function Footer() {
           <div className={footerStyle.socialLinksBlock}>
             <ul>
               <li>
-                <Link to="/">linkedin</Link>
+                <Link to="https://www.linkedin.com/in/schoonmaak-loont-a1a8bb1b5/">linkedin</Link>
               </li>
               <li>
-                <Link to="/">facebook</Link>
+                <Link to="https://www.facebook.com/schoonmaakloont">facebook</Link>
               </li>
             </ul>
           </div>

@@ -3,8 +3,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-//import myImg from '../images/slider-pics/Corona_Virus_Schoonmaak.jpg'
-
 export default function _404(props) {
   return (
     <div>
