@@ -6,6 +6,6 @@
   </a>
 </p>
 <h1 align="center">
-  Finall project for a cleaning company
+  Final project for a cleaning company
 </h1>
 
